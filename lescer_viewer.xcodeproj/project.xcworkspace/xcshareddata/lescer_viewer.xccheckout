@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2DE810EA-6217-4D46-9F23-C28803B9732D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>lescer_viewer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>39071F67B450305DED49928C92B0E0D3FCFB77D7</key>
+		<string>https://github.com/miguelespada/lescer_viewer.git</string>
+		<key>82C2DA8EC60CC36BD4CBE078AD41475599400228</key>
+		<string>https://github.com/arturoc/ofxHttpUtils.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>lescer_viewer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>39071F67B450305DED49928C92B0E0D3FCFB77D7</key>
+		<string>../..</string>
+		<key>82C2DA8EC60CC36BD4CBE078AD41475599400228</key>
+		<string>../../../addons/ofxHttpUtils</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/miguelespada/lescer_viewer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>39071F67B450305DED49928C92B0E0D3FCFB77D7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>39071F67B450305DED49928C92B0E0D3FCFB77D7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lescer_viewer</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>82C2DA8EC60CC36BD4CBE078AD41475599400228</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxHttpUtils</string>
+		</dict>
+	</array>
+</dict>
+</plist>
