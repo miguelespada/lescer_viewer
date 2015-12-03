@@ -24,6 +24,8 @@ public:
     JoystickMovs movs;
     Reactions reactions;
     
+    int currentTimeOrFruits;
+    
     App();
     ~App(){};
     

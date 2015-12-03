@@ -20,6 +20,7 @@ App::App():BaseApp(){
     
     heatmap.rot_x = &rotations[X];
     heatmap.rot_y = &rotations[Y];
+    currentTimeOrFruits = 0;
 
 }
 
@@ -34,6 +35,7 @@ void App::clear(){
     heatmap.clear();
     movs.clear();
     reactions.clear();
+    currentTimeOrFruits = 0;
 }
 
 void App::getMetadata(){

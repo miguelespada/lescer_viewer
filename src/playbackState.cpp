@@ -39,8 +39,8 @@ void PlaybackState::draw(){
     
     Assets::getInstance()->play_on.draw(700, 30, 20, 20);
 
-    app->drawConnectionInfo();
     app->drawData();
+    app->drawConnectionInfo();
 };
 
 

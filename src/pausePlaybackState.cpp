@@ -39,8 +39,8 @@ void PausePlaybackState::draw(){
     
     ofSetColor(127);
     Assets::getInstance()->play_off.draw(700, 30, 20, 20);
-    app->drawConnectionInfo();
     app->drawData();
+    app->drawConnectionInfo();
 };
 
 void PausePlaybackState::update(){

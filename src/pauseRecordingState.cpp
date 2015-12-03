@@ -44,8 +44,8 @@ void PauseRecordingState::draw(){
     
     ofPopMatrix();
     
-    app->drawConnectionInfo();
     app->drawData();
+    app->drawConnectionInfo();
 };
 
 void PauseRecordingState::update(){

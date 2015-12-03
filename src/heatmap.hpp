@@ -20,7 +20,7 @@ public:
     
     void clear(){
         heatmap->begin();
-        ofClear(240);
+        ofClear(220);
         ofEnableAlphaBlending();
         heatmap->end();
     };

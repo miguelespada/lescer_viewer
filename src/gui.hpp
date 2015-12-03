@@ -27,6 +27,7 @@ class Gui
     ofxLabel timestamp;
     ofxLabel counter;
     ofxLabel index;
+    ofxLabel current;
     
     
 public:
@@ -48,6 +49,8 @@ public:
         timestamp = stamp.substr(0, stamp.size()-7);
         counter = ofToString(app->session->getSize());
         index  = ofToString(app->session->index);
+        current.setup( "actual", ofToString(app->currentTimeOrFruits) );
+        
         app->heatmap.L = trace;
         app->session->speed = playback_speed;
         if(bVisible)
@@ -90,8 +93,8 @@ public:
         
         
         gui.add(timeCount.setup( "numero", 50, 0, 200 ));
-        
         gui.add(nivel.setup( "nivel", 1, 1, 4 ));
+        gui.add(current.setup( "actual", ofToString(app->currentTimeOrFruits) ));
         
     
         

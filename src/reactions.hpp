@@ -56,9 +56,9 @@ public:
         ofSetColor(0);
         string msg = "REACCIONES";
         msg += "\n";
-        msg += "ULTIMO: " + ofToString(last_time);
+        msg += "ULTIMA: " + ofToString(last_time);
         msg += "\n";
-        msg += "MEDIA(s): " + ofToString(mean);
+        msg += "MEDIA: " + ofToString(mean);
         
         for(int i = 0; i < N_POS; i ++){
             mean = 0;
@@ -67,7 +67,7 @@ public:
                 mean += values[i] / positions[i];
             
             msg += "\n";
-            msg += ofToString(i)  +  " N:  " + ofToString(positions[i]) +  " MEDIA (s) " + ofToString(mean);
+            msg += ofToString(i)  +  "   N:   " + ofToString(positions[i]) +  "   MEDIA   " + ofToString(mean) + " (s)";
         }
         
         font->drawString(msg, 0, 0);
