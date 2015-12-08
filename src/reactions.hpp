@@ -56,6 +56,8 @@ public:
         ofSetColor(0);
         string msg = "REACCIONES";
         msg += "\n";
+        msg += "TOTAL: " + ofToString(n_hits);
+        msg += "\n";
         msg += "ULTIMA: " + ofToString(last_time);
         msg += "\n";
         msg += "MEDIA: " + ofToString(mean);
@@ -95,9 +97,12 @@ public:
         vector<string> tokens = ofSplitString(data, ";");
         if(tokens.size() < N_POS * 3)
             return;
+        n_hits = 0;
         for(int i = 0; i < N_POS; i ++){
             positions[i] = ofToInt(tokens[(i * 3) + 1]);
+            n_hits += positions[i];
             values[i] = ofToFloat(tokens[(i * 3) + 2]);
+            total_time += values[i];
         }
     }
 };

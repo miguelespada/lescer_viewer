@@ -91,9 +91,8 @@ public:
         gui.add(calibrate.setup("Calibrate"));
         gui.add(clear.setup("Clear"));
         
-        
-        gui.add(timeCount.setup( "numero", 50, 0, 200 ));
         gui.add(nivel.setup( "nivel", 1, 1, 4 ));
+        gui.add(timeCount.setup( "numero", 50, 0, 200 ));
         gui.add(current.setup( "actual", ofToString(app->currentTimeOrFruits) ));
         
     
@@ -118,13 +117,11 @@ public:
     
     
     void startTimeGamePressed(){
-        cout << "Time pressed" << endl;
         osc->sendAction("/startTimeGame", nivel, timeCount);
         app->clear();
     }
     
     void startFruitGamePressed(){
-        cout << "Game pressed" << endl;
         osc->sendAction("/startCountGame", nivel, timeCount);
         app->clear();
     }

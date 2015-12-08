@@ -16,6 +16,7 @@ public:
     int ref;
 
     Rotation(){
+        ref = 0;
         clear();
     };
     
@@ -37,7 +38,6 @@ public:
     
     void  clear(){
         clearData();
-        ref = 0;
         last = 0;
     };
     

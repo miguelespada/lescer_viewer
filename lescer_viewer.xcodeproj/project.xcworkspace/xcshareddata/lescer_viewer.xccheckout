@@ -10,7 +10,7 @@
 	<string>lescer_viewer</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>39071F67B450305DED49928C92B0E0D3FCFB77D7</key>
+		<key>38E92F9C257ADB1A2174600E69D42CF0662B6260</key>
 		<string>https://github.com/miguelespada/lescer_viewer.git</string>
 		<key>82C2DA8EC60CC36BD4CBE078AD41475599400228</key>
 		<string>https://github.com/arturoc/ofxHttpUtils.git</string>
@@ -19,7 +19,7 @@
 	<string>lescer_viewer.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>39071F67B450305DED49928C92B0E0D3FCFB77D7</key>
+		<key>38E92F9C257ADB1A2174600E69D42CF0662B6260</key>
 		<string>../..</string>
 		<key>82C2DA8EC60CC36BD4CBE078AD41475599400228</key>
 		<string>../../../addons/ofxHttpUtils</string>
@@ -29,14 +29,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>39071F67B450305DED49928C92B0E0D3FCFB77D7</string>
+	<string>38E92F9C257ADB1A2174600E69D42CF0662B6260</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>39071F67B450305DED49928C92B0E0D3FCFB77D7</string>
+			<string>38E92F9C257ADB1A2174600E69D42CF0662B6260</string>
 			<key>IDESourceControlWCCName</key>
 			<string>lescer_viewer</string>
 		</dict>

@@ -46,6 +46,7 @@ void RecordingState::draw(){
 };
 
 void RecordingState::update(){
+    app->bProcessData = true;
 };
 
 void RecordingState::next(){

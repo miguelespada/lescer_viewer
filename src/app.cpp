@@ -21,6 +21,8 @@ App::App():BaseApp(){
     heatmap.rot_x = &rotations[X];
     heatmap.rot_y = &rotations[Y];
     currentTimeOrFruits = 0;
+    
+    bProcessData = true;
 
 }
 
@@ -78,7 +80,7 @@ void App::updateLoadedData(){
 
 
 void App::addData(float pos_x, float pos_y, float x, float y, float z){
-    
+
     
     if(rotations[X].equals(x) && rotations[Y].equals(y) && rotations[Z].equals(z) && path.equals(pos_x, pos_y)){
         return;
@@ -91,7 +93,6 @@ void App::addData(float pos_x, float pos_y, float x, float y, float z){
         path.add(pos_x, pos_y);
         session->bNew = true;
     }
-    
     
     session->add();
     
@@ -200,6 +201,7 @@ void App::setRotationRef(){
 }
 
 void App::newPlaybackPosition(){
+    bProcessData = false;
     session->newPosition();
 }
 
