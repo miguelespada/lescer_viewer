@@ -4,6 +4,8 @@
 
 PlaybackState::PlaybackState(App *a):BaseState(a){
     BaseState::initialize();
+    app->path.last.x = 0;
+    app->path.last.y = 0;
 };
 
 PlaybackState::~PlaybackState(){

@@ -26,6 +26,8 @@ void HTTP::upload(string csv){
     form.addFormField("ref_x", ofToString(app->rotations[0].ref));
     form.addFormField("ref_y", ofToString(app->rotations[1].ref));
     form.addFormField("ref_z", ofToString(app->rotations[2].ref));
+    form.addFormField("left_movs", ofToString(app->movs.left));
+    form.addFormField("right_movs", ofToString(app->movs.right));
     form.addFormField("reactions", ofToString(app->reactions.getDataRow()));
     httpUtils.addForm(form);
 }

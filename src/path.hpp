@@ -8,12 +8,21 @@ class Path{
 public:
     ofPoint last;
     vector<ofPoint> data;
+    float w;
+    float h;
+    float x_0;
+    float y_0;
     
     Path(){
         path = new ofFbo();
         path->allocate(500, 500, GL_RGB);
         
         clear();
+        
+        w = 100;
+        h = 100;
+        x_0 = -50;
+        y_0 = -50;
     };
     
     void clear(){
@@ -28,15 +37,25 @@ public:
         path->end();
         last.x = 0;
         last.y = 0;
+        data.clear();
     }
     
-    void add(int x, int y){
+    void add(float x, float y){
         if(last.x != 0 || last.y != 0){
             ofPushStyle();
             path->begin();
             ofSetColor(255, 0, 0);
             ofSetLineWidth(2);
-            ofLine(last.x, SIZE - last.y, x, SIZE - y);
+            
+            float p_xx = ofMap(last.x, x_0, x_0 + w, 0, 500);
+            float xx = ofMap(x, x_0, x_0 + w, 0, 500);
+            
+            float p_yy = ofMap(last.y, y_0, y_0 + h, 500, 0);
+            float yy = ofMap(y, y_0, y_0 + h, 500, 0);
+            
+            ofLine(p_xx, p_yy, xx, yy);
+            
+            
             path->end();
             ofPopStyle();
         }
@@ -60,9 +79,9 @@ public:
     
     string getDataRow(int i){
         string row = "";
-        row += data[i].x;
+        row += ofToString(data[i].x);
         row += ";";
-        row += data[i].y;
+        row += ofToString(data[i].y);
         return row;
     }
     

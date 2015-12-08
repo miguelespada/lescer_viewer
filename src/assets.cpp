@@ -17,7 +17,7 @@ void Assets::loadAssets(){
     loadImage(&campo, "campo.png");
     loadImage(&ciudad, "ciudad.png");
     loadImage(&setas, "setas.png");
-    loadImage(&supermercado, "supermercado.png");
+    loadImage(&supermercado, "supermercado.jpg");
     loadImage(&joystick, "joystick.png");
     loadImage(&wireframe_head, "wireframe_head.png");
 }

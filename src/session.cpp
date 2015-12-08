@@ -65,8 +65,9 @@ void Session::newPosition(){
             if(index < counter) {
                 vector<string> tokens = ofSplitString(rows[index], ";");
                 
-                int pos_x = ofToInt(tokens[0]);
-                int pos_y = ofToInt(tokens[1]);
+                float pos_x = ofToFloat(tokens[0]);
+                float pos_y = ofToFloat(tokens[1]);
+                
                 int x = ofToInt(tokens[2]);
                 int y = ofToInt(tokens[3]);
                 int z = ofToInt(tokens[4]);
