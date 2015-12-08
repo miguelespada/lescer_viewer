@@ -5,7 +5,6 @@ public:
     string name;
     string exercice;
     
-    
     Metadata(){
         name = "";
         exercice = "";

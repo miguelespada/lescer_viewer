@@ -67,6 +67,10 @@ void App::setMap(){
     else if(metadata.exercice == "Setas"){
         path.setFondo(Assets::getInstance()->setas);
     }
+    path.w = json_data["width"].asInt();
+    path.h = json_data["height"].asInt();
+    path.x_0 = json_data["x"].asInt();
+    path.y_0 = json_data["y"].asInt();
     
 }
 
@@ -80,7 +84,6 @@ void App::updateLoadedData(){
 
 
 void App::addData(float pos_x, float pos_y, float x, float y, float z){
-
     
     if(rotations[X].equals(x) && rotations[Y].equals(y) && rotations[Z].equals(z) && path.equals(pos_x, pos_y)){
         return;
