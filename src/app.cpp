@@ -67,11 +67,11 @@ void App::setMap(){
     else if(metadata.exercice == "Setas"){
         path.setFondo(Assets::getInstance()->setas);
     }
+    
     path.w = json_data["width"].asInt();
     path.h = json_data["height"].asInt();
     path.x_0 = json_data["x"].asInt();
     path.y_0 = json_data["y"].asInt();
-    
 }
 
 void App::updateLoadedData(){
@@ -165,11 +165,8 @@ void App::drawConnectionInfo(){
         Assets::getInstance()->on.draw(0, 0);
     else
         Assets::getInstance()->off.draw(0, 0);
-    
-
     ofPopStyle();
     ofPopMatrix();
-
 }
 
 void App::save(){
@@ -235,4 +232,18 @@ void App::addJoystickMov(float m){
         movs.right ++;
     }
 
+}
+
+void App::dumpHeatmap(){
+    ofLogNotice() << " processing heatmap data";
+    if(session->getSize() < 1) return;
+    string s = "";
+    for(int i = 1; i < session->getSize(); i ++){
+       s += ofToString(ofAngleDifferenceDegrees(session->getX(i), heatmap.rot_x->ref));
+       s += ";";
+       s += ofToString(ofAngleDifferenceDegrees(session->getY(i), heatmap.rot_y->ref));
+       if (i < session->getSize() - 1)
+            s += "\n";
+    }
+    http->uploadHeatmap(s);
 }

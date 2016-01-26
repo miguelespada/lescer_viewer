@@ -141,7 +141,6 @@ public:
     
     float dist(int i){
         return ofAngleDifferenceDegrees(data[i], ref);
-        
     }
     
     string getDataRow(int i){

@@ -15,6 +15,8 @@ public:
     static Assets* getInstance();
     void loadAssets();
     
+    bool isViewer();
+    
     ofImage cabeza_x;
     ofImage cabeza_y;
     ofImage cabeza_z;

@@ -1,6 +1,7 @@
 #include "standbyState.h"
-#include "recordingState.h"
+#include "pauseRecordingState.h"
 #include "pausePlaybackState.h"
+#include "assets.h"
 
 StandbyState::StandbyState(App *a):BaseState(a){
     BaseState::initialize();
@@ -23,8 +24,12 @@ void StandbyState::update(){
 };
 
 void StandbyState::next(){
-    
-    app->setCurrentState(new PausePlaybackState(app));
+    if(Assets::getInstance()->isViewer()){
+        app->load();
+        app->setCurrentState(new PausePlaybackState(app));
+    }
+    else
+        app->setCurrentState(new PauseRecordingState(app));
     delete this;
 };
 
@@ -33,10 +38,6 @@ void StandbyState::keypressed(int key){
     switch (key) {
         case ' ':
             next();
-            break;
-        case 13:
-            app->setCurrentState(new PausePlaybackState(app));
-            delete this;
             break;
         default:
             break;

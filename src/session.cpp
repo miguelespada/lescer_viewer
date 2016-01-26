@@ -7,6 +7,7 @@ Session::Session(App *a){
 }
 
 void Session::clear(){
+    
     counter = 0;
     index = 0;
     bSaved = true;
@@ -80,3 +81,17 @@ void Session::newPosition(){
         }
     }
 }
+
+int Session::getX(int i){
+    vector<string> tokens = ofSplitString(rows[i], ";");
+    return ofToInt(tokens[2]);
+}
+
+int Session::getY(int i){
+    vector<string> tokens = ofSplitString(rows[i], ";");
+    return ofToInt(tokens[3]);
+}
+
+
+
+

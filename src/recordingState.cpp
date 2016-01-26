@@ -17,22 +17,20 @@ void RecordingState::draw(){
     ofPushMatrix();
     ofPushStyle();
     
-    ofBackground(255);
+    ofBackground(255, 200, 200);
     
     ofSetColor(0);
-    ofTrueTypeFont *font = Assets::getInstance()->getFont(12);
+    ofTrueTypeFont *font = Assets::getInstance()->getFont(40);
     
-    string msg = "[ESPACIO] para PARAR session";
+    string msg = "FRAMES: " + ofToString(app->session->getSize());
+    
+    font->drawString(msg, 230, 50);
+    
+    font = Assets::getInstance()->getFont(12);
+    msg = "[ESPACIO] para PARAR session";
     
     font->drawString(msg, 230, 80);
-    
-    
-    
-    font = Assets::getInstance()->getFont(40);
-    font->drawString("MODO: GRABAR", 230, 40);
-    font = Assets::getInstance()->getFont(12);
-    font->drawString("[CLICK] para cambiar de modo", 230, 60);
-    
+
     
     ofSetColor(255, 0, 0);
     ofCircle(700, 30, 10);
@@ -60,9 +58,7 @@ void RecordingState::keypressed(int key){
             next();
             break;
         case 13:
-            changeMode();
             break;
-            
         default:
             break;
     }

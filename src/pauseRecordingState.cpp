@@ -15,23 +15,21 @@ void PauseRecordingState::draw(){
     ofPushMatrix();
     ofPushStyle();
     
-    ofBackground(220);
+    ofBackground(200);
     
     ofSetColor(0);
-    ofTrueTypeFont *font = Assets::getInstance()->getFont(12);
     
-    string msg = "[ESPACIO] para CONTINUAR session";
+    ofTrueTypeFont *font = Assets::getInstance()->getFont(40);
+    
+    string msg = "FRAMES: " + ofToString(app->session->getSize());
+    
+    font->drawString(msg, 230, 50);
+    
+    font = Assets::getInstance()->getFont(12);
+    msg = "[ESPACIO] para CONTINUAR session";
     msg += "\n";
     msg += "[s] para GUARDAR session";
-    
     font->drawString(msg, 230, 80);
-    
-    
-    
-    font = Assets::getInstance()->getFont(40);
-    font->drawString("MODO: GRABAR", 230, 40);
-    font = Assets::getInstance()->getFont(12);
-    font->drawString("[CLICK] para cambiar de modo", 230, 60);
     
     
     ofSetColor(255, 0, 0);
@@ -62,11 +60,11 @@ void PauseRecordingState::keypressed(int key){
             next();
             break;
         case 13:
-            changeMode();
             break;
         case 's':
             ofLogNotice() << "Saving data...";
             app->save();
+            app->dumpHeatmap();
             break;
         default:
             break;

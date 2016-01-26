@@ -25,9 +25,9 @@
 		483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78D67A00EB899FAC09430597 /* ofxLabel.cpp */; };
 		491E19271C04597300D4160F /* recordingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 491E19251C04597300D4160F /* recordingState.cpp */; };
 		491E192A1C0459A000D4160F /* playbackState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 491E19281C0459A000D4160F /* playbackState.cpp */; };
+		4929816C1C5533BD00C09BB4 /* baseAssets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4929816A1C5533BD00C09BB4 /* baseAssets.cpp */; };
 		493E89F01C16E9480036E84F /* OscAdapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 493E89EE1C16E9480036E84F /* OscAdapter.cpp */; };
 		493E8A0E1C16ECEE0036E84F /* baseApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 493E8A071C16ECEE0036E84F /* baseApp.cpp */; };
-		493E8A0F1C16ECEE0036E84F /* baseAssets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 493E8A091C16ECEE0036E84F /* baseAssets.cpp */; };
 		493E8A101C16ECEE0036E84F /* baseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 493E8A0B1C16ECEE0036E84F /* baseState.cpp */; };
 		493E8A111C16ECEE0036E84F /* singletonAssets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 493E8A0D1C16ECEE0036E84F /* singletonAssets.cpp */; };
 		495293161C05B8840080546C /* pauseRecordingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 495293141C05B8840080546C /* pauseRecordingState.cpp */; };
@@ -209,12 +209,12 @@
 		491E19291C0459A000D4160F /* playbackState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playbackState.h; sourceTree = "<group>"; };
 		491E19301C0468E600D4160F /* metadata.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = metadata.hpp; sourceTree = "<group>"; };
 		491E19341C04AFF000D4160F /* rotation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rotation.hpp; sourceTree = "<group>"; };
+		4929816A1C5533BD00C09BB4 /* baseAssets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = baseAssets.cpp; path = src/baseAssets.cpp; sourceTree = SOURCE_ROOT; };
+		4929816B1C5533BD00C09BB4 /* baseAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = baseAssets.h; path = src/baseAssets.h; sourceTree = SOURCE_ROOT; };
 		493E89EE1C16E9480036E84F /* OscAdapter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscAdapter.cpp; sourceTree = "<group>"; };
 		493E89EF1C16E9480036E84F /* OscAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscAdapter.h; sourceTree = "<group>"; };
 		493E8A071C16ECEE0036E84F /* baseApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = baseApp.cpp; sourceTree = "<group>"; };
 		493E8A081C16ECEE0036E84F /* baseApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseApp.h; sourceTree = "<group>"; };
-		493E8A091C16ECEE0036E84F /* baseAssets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = baseAssets.cpp; sourceTree = "<group>"; };
-		493E8A0A1C16ECEE0036E84F /* baseAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseAssets.h; sourceTree = "<group>"; };
 		493E8A0B1C16ECEE0036E84F /* baseState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = baseState.cpp; sourceTree = "<group>"; };
 		493E8A0C1C16ECEE0036E84F /* baseState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseState.h; sourceTree = "<group>"; };
 		493E8A0D1C16ECEE0036E84F /* singletonAssets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = singletonAssets.cpp; sourceTree = "<group>"; };
@@ -498,9 +498,9 @@
 			children = (
 				493E8A071C16ECEE0036E84F /* baseApp.cpp */,
 				493E8A081C16ECEE0036E84F /* baseApp.h */,
-				493E8A091C16ECEE0036E84F /* baseAssets.cpp */,
-				493E8A0A1C16ECEE0036E84F /* baseAssets.h */,
 				493E8A0B1C16ECEE0036E84F /* baseState.cpp */,
+				4929816A1C5533BD00C09BB4 /* baseAssets.cpp */,
+				4929816B1C5533BD00C09BB4 /* baseAssets.h */,
 				493E8A0C1C16ECEE0036E84F /* baseState.h */,
 				493E8A0D1C16ECEE0036E84F /* singletonAssets.cpp */,
 				4B948DEC4411B26F3C9BE5DE /* assets.cpp */,
@@ -1030,6 +1030,7 @@
 				879A251454401BC0B6E4F238 /* OscTypes.cpp in Sources */,
 				63B57AC5BF4EF088491E0317 /* ofxXmlSettings.cpp in Sources */,
 				933A2227713C720CEFF80FD9 /* tinyxml.cpp in Sources */,
+				4929816C1C5533BD00C09BB4 /* baseAssets.cpp in Sources */,
 				499869CA1BB04EF0007D3A0F /* arduino.cpp in Sources */,
 				9D44DC88EF9E7991B4A09951 /* tinyxmlerror.cpp in Sources */,
 				5A4349E9754D6FA14C0F2A3A /* tinyxmlparser.cpp in Sources */,
@@ -1039,7 +1040,6 @@
 				9F5C6DD965B4F3A6DB5B88F8 /* ofxUI2DGraph.cpp in Sources */,
 				495293211C0628640080546C /* heatmap.hpp in Sources */,
 				4B3ED367CA852D522E2EE996 /* ofxUI2DPad.cpp in Sources */,
-				493E8A0F1C16ECEE0036E84F /* baseAssets.cpp in Sources */,
 				F1E8DE8734BA6F69A5112FA8 /* ofxUIBaseDraws.cpp in Sources */,
 				C381F2B7CFD84C0E540EB4BC /* ofxUIBiLabelSlider.cpp in Sources */,
 				7D393646FB859A930EF58917 /* ofxUIButton.cpp in Sources */,

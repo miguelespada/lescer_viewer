@@ -32,7 +32,7 @@ public:
             fondo.draw(0, 0);
         }
         else{
-            ofClear(255, 0, 0);
+            ofClear(200);
         }
         path->end();
         last.x = 0;

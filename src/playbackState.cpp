@@ -26,13 +26,7 @@ void PlaybackState::draw(){
     msg += "[x] para REINICIAR reproduccion";
    
     
-    font->drawString(msg, 230, 80);
-    
-    
-    font = Assets::getInstance()->getFont(40);
-    font->drawString("MODO: REPRODUCIR", 230, 40);
-    font = Assets::getInstance()->getFont(12);
-    font->drawString("[CLICK] para cambiar de modo", 230, 60);
+    font->drawString(msg, 230, 20);
     
     
     ofPopStyle();
@@ -66,7 +60,6 @@ void PlaybackState::keypressed(int key){
             app->resetData();
             break;
         case 13:
-            changeMode();
             break;
         default:
             break;

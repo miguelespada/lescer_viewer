@@ -21,3 +21,7 @@ void Assets::loadAssets(){
     loadImage(&joystick, "joystick.png");
     loadImage(&wireframe_head, "wireframe_head.png");
 }
+
+bool Assets::isViewer(){
+    return getData("viewer").asBool();
+}
