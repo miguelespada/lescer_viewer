@@ -33,6 +33,9 @@ public:
     vector<string> rows;
     bool bSaving;
     int speed;
+    
+    int getY(int i);
+    int getX(int i);
 };
 
 

@@ -4,5 +4,6 @@
   "remote_port" : 8080,
   "width" : 1240,
   "height" : 800,
-  "scale" : 1
+  "scale" : 1,
+  "viewer" : 0
  }

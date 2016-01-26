@@ -1,6 +1,8 @@
 #include "ofxGui.h"
 #include "app.h"
 #include "session.h"
+#include "assets.h"
+#include "recordingState.h"
 
 class Gui
 {
@@ -39,8 +41,7 @@ public:
         init();
         
         bVisible = true;
-        load();
-    }
+        load();    }
     
     void draw(){
         name = app->metadata.name;
@@ -83,28 +84,30 @@ public:
         gui.add(timestamp.setup("Fecha", timestamp));
         gui.add(counter.setup("Contador", counter));
         
-        gui.add(index.setup("Posicion", index));
+        if(Assets::getInstance()->isViewer()){
+            gui.add(index.setup("Posicion", index));
+            gui.add(playback_speed.setup( "speed",  2, 1, 20));
+            gui.add(trace.setup( "trace",  400, 100, 5000 ));
+        }
+        else{
+            gui.add(calibrate.setup("Calibrate"));
+            gui.add(clear.setup("Clear"));
         
-        gui.add(playback_speed.setup( "speed",  2, 1, 20));
-        gui.add(trace.setup( "trace",  400, 100, 5000 ));
-        
-        gui.add(calibrate.setup("Calibrate"));
-        gui.add(clear.setup("Clear"));
-        
-        gui.add(nivel.setup( "nivel", 1, 1, 4 ));
-        gui.add(timeCount.setup( "numero", 50, 0, 200 ));
-        gui.add(current.setup( "actual", ofToString(app->currentTimeOrFruits) ));
-        
-    
-        
-        startTimeGame.addListener(this, &Gui::startTimeGamePressed);
-        startFruitGame.addListener(this,&Gui::startFruitGamePressed);
-        calibrate.addListener(this,&Gui::calibratedPressed);
-        clear.addListener(this,&Gui::clearPressed);
-        
-        gui.add(startTimeGame.setup("Time game"));
-        gui.add(startFruitGame.setup("Fruit game"));
-        
+            
+            calibrate.addListener(this,&Gui::calibratedPressed);
+            clear.addListener(this,&Gui::clearPressed);
+            
+            
+                gui.add(nivel.setup( "nivel", 1, 1, 4 ));
+                gui.add(timeCount.setup( "numero", 50, 0, 200 ));
+                gui.add(current.setup( "actual", ofToString(app->currentTimeOrFruits) ));
+                
+                startTimeGame.addListener(this, &Gui::startTimeGamePressed);
+                startFruitGame.addListener(this,&Gui::startFruitGamePressed);
+                gui.add(startTimeGame.setup("Time game"));
+                gui.add(startFruitGame.setup("Fruit game"));
+            
+        }
     }
     
     void calibratedPressed(){
@@ -118,12 +121,18 @@ public:
     
     void startTimeGamePressed(){
         osc->sendAction("/startTimeGame", nivel, timeCount);
-        app->clear();
+        startGame();
     }
     
     void startFruitGamePressed(){
         osc->sendAction("/startCountGame", nivel, timeCount);
+        startGame();
+    }
+    
+    void startGame(){
         app->clear();
+        app->setCurrentState(new RecordingState(app));
+        app->session->bSaving = true;
     }
 };
 

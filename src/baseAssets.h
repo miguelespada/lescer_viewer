@@ -29,11 +29,11 @@ public:
     void loadFont(int size);
 
     string default_font;
+    Json::Value getData(string key);
     
 private:
     vector<ofVideoPlayer*> videos;
     
-    Json::Value getData(string key);
     ofxJSONElement settings;
     
     void clearFonts();

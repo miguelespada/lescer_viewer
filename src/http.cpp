@@ -32,12 +32,30 @@ void HTTP::upload(string csv){
     httpUtils.addForm(form);
 }
 
+void HTTP::uploadHeatmap(string heatmap){
+    ofAddListener(httpUtils.newResponseEvent,this, &HTTP::uploadResponse);
+    ofxHttpForm form;
+    form.action = "http://localhost:3000/sessions/uploadHeatmap.json";
+    form.method = OFX_HTTP_POST;
+    form.addFormField("timestamp", app->session->getTimeStamp());
+    form.addFormField("heatmap", heatmap);
+    httpUtils.addForm(form);
+}
+
 void HTTP::download(){
     ofAddListener(httpUtils.newResponseEvent,this,&HTTP::downloadResponse);
     
     ofxHttpForm form;
     form.method = OFX_HTTP_GET;
     form.action = "http://localhost:3000/sessions/selected.json";
+    httpUtils.addForm(form);
+}
+
+void HTTP::setExercice(string exercice){
+    ofxHttpForm form;
+    form.method = OFX_HTTP_POST;
+    form.addFormField("name", exercice);
+    form.action = "http://localhost:3000/exerciceByName.json";
     httpUtils.addForm(form);
 }
 
@@ -60,6 +78,7 @@ void HTTP::downloadResponse(ofxHttpResponse & response){
 }
 
 void HTTP::metadataResponse(ofxHttpResponse & response){
+
     if(response.reasonForStatus == "OK"){
         ofLogNotice() << "Get metadata succesfull";
         app->json_data.parse(response.responseBody);

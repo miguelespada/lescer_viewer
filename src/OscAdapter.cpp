@@ -1,4 +1,5 @@
 #include "OscAdapter.h"
+#include "http.h"
 
 OscAdapter::OscAdapter(App *a){
     app = a;
@@ -27,11 +28,13 @@ OscAdapter::~OscAdapter(){
 }
 
 void OscAdapter::update(ofEventArgs &args){
-    while(receiver->hasWaitingMessages()){
-        bOnline = true;
-        ofxOscMessage m;
-        receiver->getNextMessage(&m);
-        processOscMessage(m);
+    if(!Assets::getInstance()->isViewer()){
+        while(receiver->hasWaitingMessages()){
+            bOnline = true;
+            ofxOscMessage m;
+            receiver->getNextMessage(&m);
+            processOscMessage(m);
+        }
     }
 }
 
@@ -57,6 +60,13 @@ void OscAdapter::processOscMessage(ofxOscMessage msg){
             return;
         app->addData(msg.getArgAsFloat(0), msg.getArgAsFloat(1), msg.getArgAsFloat(2), msg.getArgAsFloat(3), msg.getArgAsFloat(4));
         app->addJoystickMov(msg.getArgAsFloat(5));
+    
+        auto exercice = msg.getArgAsString(6);
+            
+        if(app->metadata.exercice != exercice){
+            app->http->setExercice(exercice);
+            app->metadata.exercice = exercice;
+        }
     }
     
     
@@ -67,6 +77,8 @@ void OscAdapter::processOscMessage(ofxOscMessage msg){
     if(msg.getAddress() == "/currentTime" || msg.getAddress() == "/currentFruits"){
         app->currentTimeOrFruits = msg.getArgAsInt32(0);
     }
+    
+    
     ofSetLogLevel(OF_LOG_NOTICE);
     
     

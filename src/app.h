@@ -15,9 +15,10 @@ class HTTP;
 
 class App: public BaseApp
 {
-    HTTP *http;
     
 public:
+    
+    HTTP *http;
     Metadata metadata;
     Heatmap heatmap;
     Path path;
@@ -34,6 +35,7 @@ public:
     void getMetadata();
     void updateMetadata();
     void updateLoadedData();
+    void dumpHeatmap();
     
     void setMap();
     
