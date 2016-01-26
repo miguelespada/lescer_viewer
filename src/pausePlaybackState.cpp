@@ -55,6 +55,7 @@ void PausePlaybackState::keypressed(int key){
             next();
             break;
         case 'p':
+            ofLogNotice() << "Dumping data";
             app->dumpHeatmap();
             break;
         case 'd':
