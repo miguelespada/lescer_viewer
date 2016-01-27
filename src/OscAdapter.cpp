@@ -66,6 +66,7 @@ void OscAdapter::processOscMessage(ofxOscMessage msg){
         if(app->metadata.exercice != exercice){
             app->http->setExercice(exercice);
             app->metadata.exercice = exercice;
+            app->setMap();
         }
     }
 
