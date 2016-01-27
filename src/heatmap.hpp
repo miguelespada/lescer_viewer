@@ -2,6 +2,7 @@
 
 #define SIZE 400
 
+
 class Heatmap{
     
     ofFbo *heatmap;
@@ -61,5 +62,6 @@ public:
         
         ofPopStyle();
     }
+    
 };
 

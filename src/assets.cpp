@@ -25,3 +25,7 @@ void Assets::loadAssets(){
 bool Assets::isViewer(){
     return getData("viewer").asBool();
 }
+
+string Assets::dataPath(){
+    return getData("data_path").asString();
+}

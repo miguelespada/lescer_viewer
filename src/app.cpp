@@ -1,6 +1,7 @@
 #include "app.h"
 #include "http.h"
 #include "session.h"
+#include "heatmap.h"
 
 #define X 0
 #define Y 1
@@ -23,6 +24,8 @@ App::App():BaseApp(){
     currentTimeOrFruits = 0;
     
     bProcessData = true;
+    
+    
 
 }
 
@@ -235,15 +238,56 @@ void App::addJoystickMov(float m){
 }
 
 void App::dumpHeatmap(){
-    ofLogNotice() << " processing heatmap data";
-    if(session->getSize() < 1) return;
-    string s = "";
-    for(int i = 1; i < session->getSize(); i ++){
-       s += ofToString(ofAngleDifferenceDegrees(session->getX(i), heatmap.rot_x->ref));
-       s += ";";
-       s += ofToString(ofAngleDifferenceDegrees(session->getY(i), heatmap.rot_y->ref));
-       if (i < session->getSize() - 1)
-            s += "\n";
+    
+    static const size_t size = 1000;
+    
+    heatmap_t* hm = heatmap_new(size, size);
+    
+    int M = 21;
+    float hist[M][M];
+    
+    for(int i = 0; i < M; i ++){
+        for(int j = 0; j < M; j ++){
+            hist[i][j] = 0;
+        }
     }
-    http->uploadHeatmap(s);
+    
+    for(int i = 1; i < session->getSize(); i ++){
+        float y = ofAngleDifferenceDegrees(session->getX(i), heatmap.rot_x->ref);
+        float x = ofAngleDifferenceDegrees(session->getY(i), heatmap.rot_y->ref);
+        x = ofMap(x, 120, -120, 0, size);
+        y = ofMap(y, 120, -120, 0, size);
+        heatmap_add_point(hm, x, y);
+        
+        x = ofMap(x, 0, size, 0, M);
+        y = ofMap(y, 0, size, 0, M);
+        
+        hist[(int) x][(int) y] += 1;
+    }
+    string str = "1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21";
+    str += "\n";
+    for(int j = 0; j < M; j ++){
+        for(int i = 0; i < M; i ++){
+            hist[i][j] = hist[i][j] / (float) session->getSize();
+            hist[i][j] *= 100;
+            str += ofToString(round(hist[i][j] * 100) / 100.0);
+            if( i != M - 1)
+                str += ";";
+        }
+        if( j != M - 1)
+            str += "\n";
+    }
+    ofFile file(Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".csv", ofFile::WriteOnly);
+    file << str;
+    
+    
+    
+    
+    unsigned char pixels[size*size*4];
+    heatmap_render_default_to(hm, pixels);
+    
+    ofImage img;
+    img.setFromPixels(pixels, size, size, OF_IMAGE_COLOR_ALPHA);
+    img.saveImage(Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".png");
+    
 }

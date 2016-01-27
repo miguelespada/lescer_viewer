@@ -14,6 +14,8 @@
 		<string>https://github.com/miguelespada/lescer_viewer.git</string>
 		<key>82C2DA8EC60CC36BD4CBE078AD41475599400228</key>
 		<string>https://github.com/arturoc/ofxHttpUtils.git</string>
+		<key>CCB327D8E4813F9CE7F60496AC6B773772BBBBBA</key>
+		<string>https://github.com/lucasb-eyer/heatmap.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>lescer_viewer.xcodeproj</string>
@@ -23,6 +25,8 @@
 		<string>../..</string>
 		<key>82C2DA8EC60CC36BD4CBE078AD41475599400228</key>
 		<string>../../../addons/ofxHttpUtils</string>
+		<key>CCB327D8E4813F9CE7F60496AC6B773772BBBBBA</key>
+		<string>../../../heatmap</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/miguelespada/lescer_viewer.git</string>
@@ -32,6 +36,14 @@
 	<string>38E92F9C257ADB1A2174600E69D42CF0662B6260</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CCB327D8E4813F9CE7F60496AC6B773772BBBBBA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>heatmap</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
