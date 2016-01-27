@@ -51,6 +51,7 @@ void App::getMetadata(){
 void App::updateMetadata(){
     if(bNewData){
         metadata.update(json_data);
+        
         bNewData = false;
         bConnected = true;
         setMap();

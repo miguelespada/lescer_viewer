@@ -68,6 +68,7 @@ void HTTP::downloadResponse(ofxHttpResponse & response){
         app->json_data.parse(response.responseBody);
         
         app->bNewData = true;
+        
     }
     else{
         ofLogError() << "Download error";
