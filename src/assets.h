@@ -16,6 +16,7 @@ public:
     void loadAssets();
     
     bool isViewer();
+    string dataPath();
     
     ofImage cabeza_x;
     ofImage cabeza_y;

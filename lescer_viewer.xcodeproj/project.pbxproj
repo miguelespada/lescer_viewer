@@ -36,6 +36,7 @@
 		495293211C0628640080546C /* heatmap.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 495293201C0628640080546C /* heatmap.hpp */; };
 		499869CA1BB04EF0007D3A0F /* arduino.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 499869C81BB04EF0007D3A0F /* arduino.cpp */; };
 		49B4D85C1B9879140087AAB6 /* http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49B4D85A1B9879140087AAB6 /* http.cpp */; };
+		49EF2F931C58A9ED00B8806F /* heatmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 49EF2F911C58A9ED00B8806F /* heatmap.c */; };
 		4ADB88E2FB52E76A471065DE /* ofxOscParameterSync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AED834CE4DEC5260AF302A2 /* ofxOscParameterSync.cpp */; };
 		4B3ED367CA852D522E2EE996 /* ofxUI2DPad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1553D7111BCBE7834BCC0784 /* ofxUI2DPad.cpp */; };
 		510CAFE035E576A4E1502D52 /* UdpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6DEF695B88BA5FAACEAA937 /* UdpSocket.cpp */; };
@@ -229,6 +230,8 @@
 		499869C91BB04EF0007D3A0F /* arduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arduino.h; sourceTree = "<group>"; };
 		49B4D85A1B9879140087AAB6 /* http.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = http.cpp; sourceTree = "<group>"; };
 		49B4D85B1B9879140087AAB6 /* http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http.h; sourceTree = "<group>"; };
+		49EF2F911C58A9ED00B8806F /* heatmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = heatmap.c; path = ../../heatmap/heatmap.c; sourceTree = "<group>"; };
+		49EF2F921C58A9ED00B8806F /* heatmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = heatmap.h; path = ../../heatmap/heatmap.h; sourceTree = "<group>"; };
 		4AEA0D08C3B0323FEDC8D974 /* ofxUIImageSampler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUIImageSampler.h; path = ../../../addons/ofxUI/src/ofxUIImageSampler.h; sourceTree = SOURCE_ROOT; };
 		4B948DEC4411B26F3C9BE5DE /* assets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = assets.cpp; path = src/assets.cpp; sourceTree = SOURCE_ROOT; };
 		4C9B919B991B4E45BC5DC0DB /* ofxUIRadio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUIRadio.h; path = ../../../addons/ofxUI/src/ofxUIRadio.h; sourceTree = SOURCE_ROOT; };
@@ -520,6 +523,8 @@
 				499869C81BB04EF0007D3A0F /* arduino.cpp */,
 				499869C91BB04EF0007D3A0F /* arduino.h */,
 				491E19241C04527D00D4160F /* gui.hpp */,
+				49EF2F911C58A9ED00B8806F /* heatmap.c */,
+				49EF2F921C58A9ED00B8806F /* heatmap.h */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -1043,6 +1048,7 @@
 				F1E8DE8734BA6F69A5112FA8 /* ofxUIBaseDraws.cpp in Sources */,
 				C381F2B7CFD84C0E540EB4BC /* ofxUIBiLabelSlider.cpp in Sources */,
 				7D393646FB859A930EF58917 /* ofxUIButton.cpp in Sources */,
+				49EF2F931C58A9ED00B8806F /* heatmap.c in Sources */,
 				7BE46522B64E24FAEDE1A25D /* ofxUICanvas.cpp in Sources */,
 				DF0C851B244C4C867CEA8806 /* ofxUICircleSlider.cpp in Sources */,
 				9BE4AE0AA2B8C436BDFE9D4D /* ofxUIDragableLabelButton.cpp in Sources */,

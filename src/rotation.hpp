@@ -4,9 +4,7 @@
 #define N 200
 #define TOLERANCE  0.1
 class Rotation{
-    
     int hist[20];
-    
     ofColor color;
     
 public:
@@ -50,9 +48,9 @@ public:
         
         drawGraph();
         drawInfo();
-        
-        ofTranslate(N + 20, 0);
-        drawHistogram();
+//        
+//        ofTranslate(N + 20, 0);
+//        drawHistogram();
         ofPopMatrix();
 
     }
@@ -103,7 +101,6 @@ public:
         data.push_back(last);
         int h_x = (int)ofMap(lastDist(), -180, 180, 0, 20);
         hist[h_x] += 1;
-    
     };
     
     
