@@ -72,21 +72,16 @@ void OscAdapter::processOscMessage(ofxOscMessage msg){
                      msg.getArgAsFloat(2),
                      msg.getArgAsFloat(3),
                      msg.getArgAsFloat(4));
-        
+
         app->addJoystickMov(msg.getArgAsFloat(5));
 
         string exercice = msg.getArgAsString(6);
 
         if(app->metadata.exercice != exercice){
-<<<<<<< HEAD
             app->http->setExercice(exercice);
             app->metadata.exercice = exercice;
-=======
-            app->http->setExercice(exercice );
-            app->metadata.exercice = exercice;
->>>>>>> 69ee5104a840554c9b599c857ea83354556317ea
             app->setMap();
-            
+
         }
     }
 
