@@ -23,6 +23,8 @@ void PausePlaybackState::draw(){
     
     string msg = "[ESPACIO] para CONTINUAR reproduccion";
     msg += "\n";
+    msg += "[RETURN] para REINICIAR reproduccion";
+    msg += "\n";
     msg += "[d] para DESCARGAR sesion";
     msg += "\n";
     msg += "[p] para PROCESAR sesion";
@@ -63,6 +65,7 @@ void PausePlaybackState::keypressed(int key){
             break;
             
         case 13:
+            app->resetData();
             break;
         default:
             break;

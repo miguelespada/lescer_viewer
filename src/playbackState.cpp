@@ -23,11 +23,13 @@ void PlaybackState::draw(){
     
     string msg = "[ESPACIO] para PARAR reproduccion";
     msg += "\n";
-    msg += "[x] para REINICIAR reproduccion";
+    msg += "[RETURN] para REINICIAR reproduccion";
    
     
     font->drawString(msg, 230, 20);
     
+    if(app->metadata.exercice == "Setas")
+        font->drawString(app->metadata.variation, 230, 100);
     
     ofPopStyle();
     
@@ -56,10 +58,8 @@ void PlaybackState::keypressed(int key){
         case ' ':
             next();
             break;
-        case 'x':
-            app->resetData();
-            break;
         case 13:
+            app->resetData();
             break;
         default:
             break;

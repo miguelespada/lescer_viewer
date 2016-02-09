@@ -8,7 +8,6 @@ void ofApp::setup(){
     gui = new Gui(&app, osc);
     ofSetFrameRate(15);
     ofEnableSmoothing();
-//    arduino = new Arduino(&app);
     
 
 }
@@ -24,6 +23,7 @@ void ofApp::draw(){
     ofClear(0);
     app.draw();
     gui->draw();
+    
 }
 
 //--------------------------------------------------------------

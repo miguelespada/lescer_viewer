@@ -144,7 +144,7 @@ void App::drawData(){
         
         
         ofPushMatrix();
-        ofTranslate(230, 150);
+        ofTranslate(10, 300);
         movs.draw();
         ofPopMatrix();
     }
