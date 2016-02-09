@@ -30,6 +30,9 @@ void RecordingState::draw(){
     msg = "[ESPACIO] para PARAR session";
     
     font->drawString(msg, 230, 80);
+    
+    if(app->metadata.exercice == "Setas")
+        font->drawString(app->metadata.variation, 230, 100);
 
     
     ofSetColor(255, 0, 0);

@@ -7,6 +7,7 @@
 class Gui
 {
     ofxPanel gui;
+    ofxPanel setasPanel;
     App *app;
     OscAdapter *osc;
     bool bVisible;
@@ -18,6 +19,7 @@ class Gui
     
     ofxIntSlider playback_speed;
     ofxIntSlider trace;
+    ofxIntSlider setasLife;
     
     ofxButton startTimeGame;
     ofxButton startFruitGame;
@@ -38,6 +40,8 @@ public:
         app = a;
         osc = o;
         gui.setup();
+        setasPanel.setup();
+        setasPanel.setPosition(10, 150);
         init();
         
         bVisible = true;
@@ -50,12 +54,19 @@ public:
         timestamp = stamp.substr(0, stamp.size()-7);
         counter = ofToString(app->session->getSize());
         index  = ofToString(app->session->index);
+        
         current.setup( "actual", ofToString(app->currentTimeOrFruits) );
         
         app->heatmap.L = trace;
         app->session->speed = playback_speed;
-        if(bVisible)
+        
+        if(bVisible){
             gui.draw();
+            if(app->metadata.exercice == "Setas"){
+                
+                setasPanel.draw();
+            }
+        }
     }
     
     void load(){
@@ -96,16 +107,19 @@ public:
             
             calibrate.addListener(this,&Gui::calibratedPressed);
             clear.addListener(this,&Gui::clearPressed);
+        
             
+                setasPanel.add(timeCount.setup( "numero", 50, 0, 200 ));
+                setasPanel.add(current.setup( "actual", ofToString(app->currentTimeOrFruits) ));
             
-                gui.add(nivel.setup( "nivel", 1, 1, 4 ));
-                gui.add(timeCount.setup( "numero", 50, 0, 200 ));
-                gui.add(current.setup( "actual", ofToString(app->currentTimeOrFruits) ));
-                
+                setasPanel.add(nivel.setup( "nivel", 1, 1, 4 ));
+                setasPanel.add(setasLife.setup( "life", 10, 5, 50 ));
+            
                 startTimeGame.addListener(this, &Gui::startTimeGamePressed);
                 startFruitGame.addListener(this,&Gui::startFruitGamePressed);
-                gui.add(startTimeGame.setup("Time game"));
-                gui.add(startFruitGame.setup("Fruit game"));
+                setasPanel.add(startTimeGame.setup("Time game"));
+                setasPanel.add(startFruitGame.setup("Fruit game"));
+        
             
         }
     }
@@ -118,14 +132,15 @@ public:
         app->clear();
     }
     
-    
     void startTimeGamePressed(){
-        osc->sendAction("/startTimeGame", nivel, timeCount);
+        osc->sendAction("/startTimeGame", nivel, timeCount, setasLife);
+        app->metadata.variation = "Time game: " + ofToString(int(nivel)) + "; Time: " +  ofToString(int(timeCount)) + "; Life: " +  ofToString(int(setasLife)) + ";";
         startGame();
     }
     
     void startFruitGamePressed(){
-        osc->sendAction("/startCountGame", nivel, timeCount);
+        osc->sendAction("/startCountGame", nivel, timeCount, setasLife);
+        app->metadata.variation = "Count game :" + ofToString(int(nivel)) + "; Number: " +  ofToString(int(timeCount)) + "; Life: " +  ofToString(int(setasLife)) + ";";
         startGame();
     }
     

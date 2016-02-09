@@ -7,6 +7,7 @@ public:
     
     int positions[N_POS];
     float values[N_POS];
+    int missed[N_POS];
     
     float total_time;
     int n_hits;
@@ -22,9 +23,10 @@ public:
     
     void clear(){
         
-        for(int i = 0; i < 8; i ++){
+        for(int i = 0; i < N_POS; i ++){
             positions[i] = 0;
             values[i] = 0;
+            missed[i] = 0;
         }
         
         n_hits = 0;
@@ -34,13 +36,18 @@ public:
     }
     
     void add(int pos, float time){
-        last_time = time;
-        n_hits += 1;
-        total_time += last_time;
+        if(time == -1){
+            missed[pos] += 1;
+        }
+        else {
         
-        positions[pos] += 1;
-        values[pos] += last_time;
-
+            last_time = time;
+            n_hits += 1;
+            total_time += last_time;
+            
+            positions[pos] += 1;
+            values[pos] += last_time;
+        }
     }
     
     void draw(){
@@ -69,7 +76,7 @@ public:
                 mean += values[i] / positions[i];
             
             msg += "\n";
-            msg += ofToString(i)  +  "   N:   " + ofToString(positions[i]) +  "   MEDIA   " + ofToString(mean) + " (s)";
+            msg += ofToString(i)  +  "   N:   " + ofToString(positions[i]) +  "   MEDIA   " + ofToString(mean) + " (s)" + "  MISSED : " + ofToString(missed[i]);
         }
         
         font->drawString(msg, 0, 0);
@@ -89,6 +96,8 @@ public:
             row += ";";
             row += ofToString(values[i]);
             row += ";";
+            row += ofToString(missed[i]);
+            row += ";";
         }
         return row;
     }
@@ -103,6 +112,7 @@ public:
             n_hits += positions[i];
             values[i] = ofToFloat(tokens[(i * 3) + 2]);
             total_time += values[i];
+            missed[i] = ofToInt(tokens[(i * 3) + 3]);
         }
     }
 };

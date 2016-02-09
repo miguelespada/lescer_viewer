@@ -28,6 +28,8 @@ void PauseRecordingState::draw(){
     font = Assets::getInstance()->getFont(12);
     msg = "[ESPACIO] para CONTINUAR session";
     msg += "\n";
+    msg += "[RETURN] para LIMPIAR session";
+    msg += "\n";
     msg += "[s] para GUARDAR session";
     font->drawString(msg, 230, 80);
 
@@ -60,6 +62,7 @@ void PauseRecordingState::keypressed(int key){
             next();
             break;
         case 13:
+            app->clear();
             break;
         case 's':
             ofLogNotice() << "Saving data...";

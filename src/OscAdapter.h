@@ -24,6 +24,7 @@ public:
     int port;
     void sendAction(string msg, int param);
     void sendAction(string msg, int param, int param2);
+    void sendAction(string msg, int param, int param2, int param3s);
     
     
     void processOscMessage(ofxOscMessage msg);
