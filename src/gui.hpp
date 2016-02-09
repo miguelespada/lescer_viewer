@@ -112,7 +112,7 @@ public:
                 setasPanel.add(timeCount.setup( "numero", 50, 0, 200 ));
                 setasPanel.add(current.setup( "actual", ofToString(app->currentTimeOrFruits) ));
             
-                setasPanel.add(nivel.setup( "nivel", 1, 1, 4 ));
+                setasPanel.add(nivel.setup( "nivel", 1, 1, 6 ));
                 setasPanel.add(setasLife.setup( "life", 10, 5, 50 ));
             
                 startTimeGame.addListener(this, &Gui::startTimeGamePressed);
