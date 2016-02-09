@@ -2,9 +2,13 @@
 	<numero>50</numero>
 	<nivel>1</nivel>
 <group/>
-<Nombre>Javier</Nombre>
+<Nombre>test</Nombre>
 	<Ejercicio>Setas</Ejercicio>
-<Fecha>2015-11-25-17-25</Fecha>
-	<Contador>0</Contador>
+<Fecha>2015-12-09-13-01</Fecha>
+	<Contador>1098</Contador>
 	<Indice>0</Indice>
-</group>
+<Posicion>1098</Posicion>
+	<speed>2</speed>
+	<trace>400</trace>
+	<actual>0</actual>
+</group>

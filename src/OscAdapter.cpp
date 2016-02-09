@@ -4,21 +4,21 @@
 OscAdapter::OscAdapter(App *a){
     app = a;
     int localPort = a->getAssets()->getLocalPort();
-    
+
     receiver = new ofxOscReceiver;
     sender = new ofxOscSender;
-    
+
     receiver->setup(localPort);
-    
+
     ofLogNotice() << "listening for osc messages on port " << localPort;
     bOnline = false;
-    
+
     host = a->getAssets()->getRemoteIp();
     port = a->getAssets()->getRemotePort();
-    
+
     sender->setup(host, port);
     cout << "Sending to "<< host << " " << port << endl;
-    
+
     ofAddListener(ofEvents().update, this, &OscAdapter::update);
 }
 
@@ -72,30 +72,30 @@ void OscAdapter::processOscMessage(ofxOscMessage msg){
                      msg.getArgAsFloat(2),
                      msg.getArgAsFloat(3),
                      msg.getArgAsFloat(4));
-        
+
         app->addJoystickMov(msg.getArgAsFloat(5));
-    
+
         string exercice = msg.getArgAsString(6);
-            
+
         if(app->metadata.exercice != exercice){
-            app->http->setExercice(exercice );
+            app->http->setExercice(exercice);
             app->metadata.exercice = exercice;
             app->setMap();
-            
+
         }
     }
-    
-    
+
+
     if(msg.getAddress() == "/reaction"){
         app->reactions.add(msg.getArgAsInt32(0), msg.getArgAsFloat(1));
     }
-    
+
     if(msg.getAddress() == "/currentTime" || msg.getAddress() == "/currentFruits"){
         app->currentTimeOrFruits = msg.getArgAsInt32(0);
     }
-    
-    
+
+
     ofSetLogLevel(OF_LOG_NOTICE);
-    
-    
+
+
 }

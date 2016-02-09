@@ -14,13 +14,13 @@ PausePlaybackState::~PausePlaybackState(){
 void PausePlaybackState::draw(){
     ofPushMatrix();
     ofPushStyle();
-    
+
     ofBackground(220);
-    
+
     ofSetColor(0);
-    
+
     ofTrueTypeFont *font = Assets::getInstance()->getFont(12);
-    
+
     string msg = "[ESPACIO] para CONTINUAR reproduccion";
     msg += "\n";
     msg += "[RETURN] para REINICIAR reproduccion";
@@ -28,14 +28,14 @@ void PausePlaybackState::draw(){
     msg += "[d] para DESCARGAR sesion";
     msg += "\n";
     msg += "[p] para PROCESAR sesion";
-    
+
     font->drawString(msg, 230, 20);
 
-    
+
     ofPopStyle();
-    
+
     ofPopMatrix();
-    
+
     ofSetColor(127);
     Assets::getInstance()->play_off.draw(700, 30, 20, 20);
     app->drawData();
@@ -57,13 +57,13 @@ void PausePlaybackState::keypressed(int key){
             next();
             break;
         case 'p':
-            ofLogNotice() << "Dumping data";
+            ofLogNotice() << "Dumping data!";
             app->dumpHeatmap();
             break;
         case 'd':
             app->load();
             break;
-            
+
         case 13:
             app->resetData();
             break;

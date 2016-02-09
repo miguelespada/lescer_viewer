@@ -10,32 +10,32 @@
 App::App():BaseApp(){
     http = new HTTP(this);
     session = new Session(this);
-    
+
     bError = false;
     bConnected = false;
     bNewData = false;
-    
+
     rotations[X].setColor(255, 0, 0);
     rotations[Y].setColor(0, 255, 0);
     rotations[Z].setColor(0, 0, 255);
-    
+
     heatmap.rot_x = &rotations[X];
     heatmap.rot_y = &rotations[Y];
     currentTimeOrFruits = 0;
-    
+
     bProcessData = true;
-    
-    
+
+
 
 }
 
 void App::clear(){
     session->clear();
-    
+
     rotations[X].clear();
     rotations[Y].clear();
     rotations[Z].clear();
-    
+
     path.clear();
     heatmap.clear();
     movs.clear();
@@ -51,7 +51,7 @@ void App::getMetadata(){
 void App::updateMetadata(){
     if(bNewData){
         metadata.update(json_data);
-        
+
         bNewData = false;
         bConnected = true;
         setMap();
@@ -71,7 +71,7 @@ void App::setMap(){
     else if(metadata.exercice == "Setas"){
         path.setFondo(Assets::getInstance()->setas);
     }
-    
+
     path.w = json_data["width"].asInt();
     path.h = json_data["height"].asInt();
     path.x_0 = json_data["x"].asInt();
@@ -88,7 +88,7 @@ void App::updateLoadedData(){
 
 
 void App::addData(float pos_x, float pos_y, float x, float y, float z){
-    
+
     if(rotations[X].equals(x) && rotations[Y].equals(y) && rotations[Z].equals(z) && path.equals(pos_x, pos_y)){
         return;
     }
@@ -96,17 +96,17 @@ void App::addData(float pos_x, float pos_y, float x, float y, float z){
         rotations[X].add(-x);
         rotations[Y].add(y);
         rotations[Z].add(-z);
-        
+
         path.add(pos_x, pos_y);
         session->bNew = true;
     }
-    
+
     session->add();
-    
+
 }
 
 void App::drawData(){
-    
+
     ofPushMatrix();
     ofPushStyle();
     ofSetColor(0);
@@ -122,7 +122,7 @@ void App::drawData(){
 
     ofPopStyle();
     ofPopMatrix();
-    
+
     ofPushStyle();
     ofPushMatrix();
     ofNoFill();
@@ -132,7 +132,7 @@ void App::drawData(){
     ofRect(0, 0, 400, 400);
     heatmap.draw();
     ofPopMatrix();
-    
+
     if(metadata.exercice != "Setas"){
         ofPushMatrix();
         ofTranslate(ofGetWidth()-405, 0);
@@ -141,8 +141,8 @@ void App::drawData(){
         path.draw();
         ofPopMatrix();
         ofPopStyle();
-        
-        
+
+
         ofPushMatrix();
         ofTranslate(10, 300);
         movs.draw();
@@ -164,7 +164,7 @@ void App::drawConnectionInfo(){
     ofPushStyle();
     ofTranslate(ofGetWidth() - 100, ofGetHeight() - 40);
     ofSetColor(0);
-    
+
     if(bConnected)
         Assets::getInstance()->on.draw(0, 0);
     else
@@ -198,7 +198,7 @@ string App::getDataRow(int i){
 }
 
 void App::setRotationRef(){
-    
+
     rotations[X].setRef();
     rotations[Y].setRef();
     rotations[Z].setRef();
@@ -216,16 +216,16 @@ void App::resetData(){
     metadata.exercice = json_data["exercice"].asString();
     session->timestamp = json_data["timestamp"].asString();
     session->fromCsv(json_data["data"].asString());
-    
+
     rotations[X].ref = json_data["ref_x"].asInt();
     rotations[Y].ref = json_data["ref_y"].asInt();
     rotations[Z].ref = json_data["ref_z"].asInt();
-    
+
     movs.left = json_data["left_movs"].asInt();
     movs.right = json_data["right_movs"].asInt();
     reactions.setFromJson(json_data["reactions"].asString());
     setMap();
-    
+
 }
 
 void App::addJoystickMov(float m){
@@ -239,32 +239,36 @@ void App::addJoystickMov(float m){
 }
 
 void App::dumpHeatmap(){
-    
+
+            ofLogNotice() << "Dumping data 2";
     static const size_t size = 1000;
-    
+    cout << "Entrando aquí....";
     heatmap_t* hm = heatmap_new(size, size);
-    
+
     int M = 21;
     float hist[M][M];
-    
+
     for(int i = 0; i < M; i ++){
         for(int j = 0; j < M; j ++){
             hist[i][j] = 0;
         }
     }
-    
+cout << "Segundo aquí....";
     for(int i = 1; i < session->getSize(); i ++){
         float y = ofAngleDifferenceDegrees(session->getX(i), heatmap.rot_x->ref);
         float x = ofAngleDifferenceDegrees(session->getY(i), heatmap.rot_y->ref);
         x = ofMap(x, 120, -120, 0, size);
         y = ofMap(y, 120, -120, 0, size);
         heatmap_add_point(hm, x, y);
-        
+
         x = ofMap(x, 0, size, 0, M);
         y = ofMap(y, 0, size, 0, M);
-        
+
         hist[(int) x][(int) y] += 1;
     }
+
+
+    cout << "Tercero aquí....";
     string str = "1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21";
     str += "\n";
     for(int j = 0; j < M; j ++){
@@ -278,17 +282,21 @@ void App::dumpHeatmap(){
         if( j != M - 1)
             str += "\n";
     }
-    ofFile file(Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".csv", ofFile::WriteOnly);
+
+    cout << Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".csv";
+
+    ofFile file( Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".csv", ofFile::WriteOnly);
     file << str;
-    
-    
-    
-    
-    unsigned char pixels[size*size*4];
+
+
+
+
+    unsigned char * pixels = new unsigned char[size*size*4];
     heatmap_render_default_to(hm, pixels);
-    
+
     ofImage img;
+    img.allocate(size, size, OF_IMAGE_COLOR_ALPHA);
     img.setFromPixels(pixels, size, size, OF_IMAGE_COLOR_ALPHA);
-    img.saveImage(Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".png");
-    
+    img.saveImage( Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".png");
+
 }
