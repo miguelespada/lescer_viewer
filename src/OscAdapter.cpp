@@ -76,7 +76,6 @@ void OscAdapter::processOscMessage(ofxOscMessage msg){
         app->addJoystickMov(msg.getArgAsFloat(5));
 
         string exercice = msg.getArgAsString(6);
-
         if(app->metadata.exercice != exercice){
             app->http->setExercice(exercice);
             app->metadata.exercice = exercice;

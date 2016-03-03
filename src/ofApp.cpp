@@ -2,13 +2,12 @@
 #include "standbyState.h"
 //--------------------------------------------------------------
 void ofApp::setup(){
-    
+
     app.setCurrentState(new StandbyState(&app));
     osc = new OscAdapter(&app);
     gui = new Gui(&app, osc);
     ofSetFrameRate(15);
     ofEnableSmoothing();
-    
 
 }
 
@@ -23,7 +22,7 @@ void ofApp::draw(){
     ofClear(0);
     app.draw();
     gui->draw();
-    
+
 }
 
 //--------------------------------------------------------------
