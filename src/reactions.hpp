@@ -65,9 +65,9 @@ public:
         msg += "\n";
         msg += "TOTAL: " + ofToString(n_hits);
         msg += "\n";
-        msg += "ULTIMA: " + ofToString(last_time);
+        msg += "ULTIMA: " + ofToString(last_time, 2);
         msg += "\n";
-        msg += "MEDIA: " + ofToString(mean);
+        msg += "MEDIA: " + ofToString(mean, 2);
         
         for(int i = 0; i < N_POS; i ++){
             mean = 0;
@@ -76,7 +76,7 @@ public:
                 mean += values[i] / positions[i];
             
             msg += "\n";
-            msg += ofToString(i)  +  "   N:   " + ofToString(positions[i]) +  "   MEDIA   " + ofToString(mean) + " (s)" + "  MISSED : " + ofToString(missed[i]);
+            msg += ofToString(i)  +  "   N:   " + ofToString(positions[i], 2) +  "   MEDIA   " + ofToString(mean, 2) + " (s)" + "  MISSED : " + ofToString(missed[i], 2);
         }
         
         font->drawString(msg, 0, 0);
@@ -104,15 +104,15 @@ public:
     
     void setFromJson(string data){
         vector<string> tokens = ofSplitString(data, ";");
-        if(tokens.size() < N_POS * 3)
+        if(tokens.size() < N_POS * 4)
             return;
         n_hits = 0;
         for(int i = 0; i < N_POS; i ++){
-            positions[i] = ofToInt(tokens[(i * 3) + 1]);
+            positions[i] = ofToInt(tokens[(i * 4) + 1]);
             n_hits += positions[i];
-            values[i] = ofToFloat(tokens[(i * 3) + 2]);
+            values[i] = ofToFloat(tokens[(i * 4) + 2]);
             total_time += values[i];
-            missed[i] = ofToInt(tokens[(i * 3) + 3]);
+            missed[i] = ofToInt(tokens[(i * 4) + 3]);
         }
     }
 };

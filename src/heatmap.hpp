@@ -45,7 +45,7 @@ public:
                 float y = rot_x->dist(size - i);
                 
                 x = ofMap(x, 120, -120, 0, SIZE);
-                y = ofMap(y, -120, 120, 0, SIZE);
+                y = ofMap(y, 120, -120, 0, SIZE);
                 
                 ofSetColor(0, 50);
 
