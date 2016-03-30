@@ -23,6 +23,7 @@ void Assets::loadAssets(){
 }
 
 bool Assets::isViewer(){
+    return true;
     return getData("viewer").asBool();
 }
 
