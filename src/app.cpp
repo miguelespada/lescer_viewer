@@ -254,8 +254,8 @@ void App::dumpHeatmap(){
     for(int i = 1; i < session->getSize(); i ++){
         float y = ofAngleDifferenceDegrees(session->getX(i), heatmap.rot_x->ref);
         float x = ofAngleDifferenceDegrees(session->getY(i), heatmap.rot_y->ref);
-        x = ofMap(x, 120, -120, 0, size);
-        y = ofMap(y, 120, -120, 0, size);
+        x = ofMap(x, 120, -120, 0, size, true);
+        y = ofMap(y, 120, -120, 0, size, true);
         heatmap_add_point(hm, x, y);
 
         x = ofMap(x, 0, size, 0, M);
