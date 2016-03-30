@@ -258,8 +258,8 @@ void App::dumpHeatmap(){
         y = ofMap(y, 120, -120, 0, size, true);
         heatmap_add_point(hm, x, y);
 
-        x = ofMap(x, 0, size, 0, M);
-        y = ofMap(y, 0, size, 0, M);
+        x = ofMap(x, 0, size, 0, M, true);
+        y = ofMap(y, 0, size, 0, M, true);
 
         hist[(int) x][(int) y] += 1;
     }
