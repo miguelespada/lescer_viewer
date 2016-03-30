@@ -240,9 +240,7 @@ void App::addJoystickMov(float m){
 
 void App::dumpHeatmap(){
 
-            ofLogNotice() << "Dumping data 2";
     static const size_t size = 1000;
-    cout << "Entrando aquí....";
     heatmap_t* hm = heatmap_new(size, size);
 
     int M = 21;
@@ -253,7 +251,6 @@ void App::dumpHeatmap(){
             hist[i][j] = 0;
         }
     }
-cout << "Segundo aquí....";
     for(int i = 1; i < session->getSize(); i ++){
         float y = ofAngleDifferenceDegrees(session->getX(i), heatmap.rot_x->ref);
         float x = ofAngleDifferenceDegrees(session->getY(i), heatmap.rot_y->ref);
@@ -268,7 +265,6 @@ cout << "Segundo aquí....";
     }
 
 
-    cout << "Tercero aquí....";
     string str = "1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21";
     str += "\n";
     for(int j = 0; j < M; j ++){
