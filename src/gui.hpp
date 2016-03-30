@@ -58,22 +58,22 @@ public:
         
         switch (nivel) {
             case 1:
-                nivel_as_string = "1 objeto";
+                nivel_as_string = "Una fruta";
                 break;
             case 2:
-                nivel_as_string = "1 objeto";
+                nivel_as_string = "Dos frutas";
                 break;
             case 3:
-                nivel_as_string = "1 objeto";
+                nivel_as_string = "Muchas frutas";
                 break;
             case 4:
-                nivel_as_string = "1 objeto";
+                nivel_as_string = "Platano";
                 break;
             case 5:
-                nivel_as_string = "1 objeto";
+                nivel_as_string = "Solo manzanas";
                 break;
             case 6:
-                nivel_as_string = "1 objeto";
+                nivel_as_string = "Solo frutas";
                 break;
                 
             default:
