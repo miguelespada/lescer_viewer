@@ -15,6 +15,7 @@ class Gui
     
     ofxFloatSlider timeCount;
     ofxIntSlider nivel;
+    ofxLabel nivel_as_string;
     
     
     ofxIntSlider playback_speed;
@@ -55,6 +56,30 @@ public:
         counter = ofToString(app->session->getSize());
         index  = ofToString(app->session->index);
         
+        switch (nivel) {
+            case 1:
+                nivel_as_string = "1 objeto";
+                break;
+            case 2:
+                nivel_as_string = "1 objeto";
+                break;
+            case 3:
+                nivel_as_string = "1 objeto";
+                break;
+            case 4:
+                nivel_as_string = "1 objeto";
+                break;
+            case 5:
+                nivel_as_string = "1 objeto";
+                break;
+            case 6:
+                nivel_as_string = "1 objeto";
+                break;
+                
+            default:
+                break;
+        }
+        
         current.setup( "actual", ofToString(app->currentTimeOrFruits) );
         
         app->heatmap.L = trace;
@@ -63,7 +88,6 @@ public:
         if(bVisible){
             gui.draw();
             if(app->metadata.exercice == "Setas"){
-                
                 setasPanel.draw();
             }
         }
@@ -113,6 +137,8 @@ public:
                 setasPanel.add(current.setup( "actual", ofToString(app->currentTimeOrFruits) ));
             
                 setasPanel.add(nivel.setup( "nivel", 1, 1, 6 ));
+                setasPanel.add(nivel_as_string.setup("EJERCICIO", "default"));
+            
                 setasPanel.add(setasLife.setup( "life", 10, 5, 50 ));
             
                 startTimeGame.addListener(this, &Gui::startTimeGamePressed);
