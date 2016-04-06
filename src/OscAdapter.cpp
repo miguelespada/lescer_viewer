@@ -91,6 +91,8 @@ void OscAdapter::processOscMessage(ofxOscMessage msg){
 
     if(msg.getAddress() == "/currentTime" || msg.getAddress() == "/currentFruits"){
         app->currentTimeOrFruits = msg.getArgAsInt32(0);
+        if(msg.getArgAsInt32(0) == 0)
+            app->current_state->next();
     }
 
 
