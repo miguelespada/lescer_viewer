@@ -32,6 +32,7 @@ string Assets::dataPath(){
 }
 
 int Assets::maxLife(int i){
+    if(i == 0) return 0;
     return ejercicios_settings["items_life"].asInt();
 }
 

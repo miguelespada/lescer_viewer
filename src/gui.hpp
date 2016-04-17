@@ -69,7 +69,7 @@ public:
                 current = ofToString(app->reactions.n_hits) + "/" + ofToString(Assets::getInstance()->maxItems(app->metadata.variation));
                 time = ofToString(app->ellapsedTime, 1) + "/" + ofToString(Assets::getInstance()->maxTime(app->metadata.variation)) ;
                 code = ofToString(Assets::getInstance()->exerciceCode(app->metadata.variation)) ;
-                
+                setasLife = ofToString(Assets::getInstance()->maxLife(app->metadata.variation)) ;
             }
         }
     }
@@ -124,7 +124,7 @@ public:
             setasPanel.add(time.setup("Tiempo", ""));
             setasPanel.add(code.setup("Code", ""));
             
-            setasPanel.add(setasLife.setup( "Maximo vida frutas: " + ofToString(Assets::getInstance()->maxLife(app->metadata.variation)) ));
+            setasPanel.add(setasLife.setup( "Maximo vida frutas", ""));
         
         }
     }
