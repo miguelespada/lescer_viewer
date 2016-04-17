@@ -23,6 +23,7 @@ void PauseRecordingState::draw(){
     ofSetColor(0);
     
     ofTrueTypeFont *font = Assets::getInstance()->getFont(16);
+    font->drawString("[c] para CALIBRAR", 230, 20);
     if(!app->session->bSaved){
         ofBackground(200, 200, 150);
         font->drawString("[s] para GUARDAR session", 230, 40);
@@ -62,6 +63,9 @@ void PauseRecordingState::keypressed(int key){
             app->dumpHeatmap();
             app->save();
             osc->sendAction("/end", 0);
+        case 'c':
+            app->setRotationRef();
+            
             
             break;
         default:
@@ -75,6 +79,7 @@ void PauseRecordingState::changeMode(){
 }
 
 void PauseRecordingState::setVariation(int v){
-    if(app->getVariation(v))
+    if(app->getVariation(v)){
         osc->sendAction("/game", v, Assets::getInstance()->exerciceCode(v), Assets::getInstance()->maxLife(v));
+    }
 }

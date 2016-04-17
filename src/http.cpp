@@ -22,11 +22,12 @@ bool HTTP::getVariation(int v){
     form.method = OFX_HTTP_GET;
     form.action = "http://localhost:3000/fruit/" + ofToString(v) + ".json";
     httpUtils.addForm(form);
+    bWaiting = true;
     return true;
 }
 
 void HTTP::variationResponse(ofxHttpResponse & response){
-    
+    bWaiting = false;
     if(response.reasonForStatus == "OK"){
         ofLogNotice() << "Download succesfull";
         app->bError = false;

@@ -112,8 +112,8 @@ public:
         }
         else{
             
-            gui.add(calibrate.setup("Calibrate"));
-            gui.add(clear.setup("Clear"));
+            gui.add(calibrate.setup("Calibrar"));
+            gui.add(clear.setup("Limpiar"));
         
             
             calibrate.addListener(this,&Gui::calibratedPressed);
@@ -122,9 +122,8 @@ public:
             
             setasPanel.add(current.setup("Frutas", ""));
             setasPanel.add(time.setup("Tiempo", ""));
+            setasPanel.add(setasLife.setup( "Maxima vida frutas", ""));
             setasPanel.add(code.setup("Code", ""));
-            
-            setasPanel.add(setasLife.setup( "Maximo vida frutas", ""));
         
         }
     }

@@ -272,7 +272,11 @@ float App::exploredPercent(){
 }
 
 bool App::getVariation(int v){
-   return http->getVariation(v - 1);
+    http->getVariation(v - 1);
+    while(http->bWaiting){
+        continue;
+    }
+   return true;
 }
 
 void App::dumpHeatmap(){

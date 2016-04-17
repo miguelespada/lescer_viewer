@@ -21,5 +21,5 @@ public:
     bool getVariation(int v);
     
     void variationResponse(ofxHttpResponse & response);
-    
+    bool bWaiting;
 };
