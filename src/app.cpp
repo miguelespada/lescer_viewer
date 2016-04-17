@@ -334,7 +334,8 @@ void App::dumpHeatmap(){
     ofImage img;
     img.allocate(size, size, OF_IMAGE_COLOR_ALPHA);
     img.setFromPixels(pixels, size, size, OF_IMAGE_COLOR_ALPHA);
-    cout <<  Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".png" << endl;
-    img.saveImage( Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".png");
+    string filename = Assets::getInstance()->dataPath() +  session->timestamp + "_" + ofToString(metadata.name)  + ".png";
+    cout << filename << endl;
+    img.saveImage( filename);
 
 }
