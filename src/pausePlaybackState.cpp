@@ -15,7 +15,7 @@ void PausePlaybackState::draw(){
     ofPushMatrix();
     ofPushStyle();
 
-    ofBackground(220);
+    ofBackground(200, 200, 250);
 
     ofSetColor(0);
 
@@ -30,7 +30,6 @@ void PausePlaybackState::draw(){
     msg += "[p] para PROCESAR sesion";
 
     font->drawString(msg, 230, 20);
-
 
     ofPopStyle();
 
@@ -55,10 +54,6 @@ void PausePlaybackState::keypressed(int key){
     switch (key) {
         case ' ':
             next();
-            break;
-        case 'p':
-            ofLogNotice() << "Dumping data!";
-            app->dumpHeatmap();
             break;
         case 'd':
             app->load();

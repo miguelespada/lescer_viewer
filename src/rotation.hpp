@@ -48,9 +48,9 @@ public:
         
         drawGraph();
         drawInfo();
-//        
-//        ofTranslate(N + 20, 0);
-//        drawHistogram();
+        
+        ofTranslate(N + 20, 0);
+        drawHistogram();
         ofPopMatrix();
 
     }
@@ -113,23 +113,35 @@ public:
         
         ofTranslate(0, 30);
         ofSetColor(0);
+        
         string msg = "REF: " + ofToString(int(ref));
         font->drawString(msg, -60, font->getLineHeight() * 1.6);
         
         ofPopMatrix();
         ofPopStyle();
     }
-    
+    float lookingUp(){
+        float upper = 0;
+        for(int i = 0; i < data.size(); i ++){
+            if(ofAngleDifferenceDegrees(data[i], ref) <= 0)
+                upper += 1;
+        }
+        return upper / data.size() * 100;
+    }
     void drawHistogram(){
         
-        int size = data.size();
-        if(size > 1){
-            ofLine(0, 0, 100, 0);
-            for(int i = 0; i < 20; i++){
-                if(hist[i] > size) hist[i] = 0;
-                ofRect(i * 10, 0, 10, (-hist[i] / float(size)) * SCALE);
-            }
-        }
+        
+        if(data.size() == 0) return;
+        
+     
+        
+        ofTrueTypeFont *font = Assets::getInstance()->getFont(12);
+
+        float upper = lookingUp();
+        string msg = ofToString(upper, 1) + "%" +  " <----> " + ofToString(100 - upper, 1) + "%";
+        ofSetColor(0);
+        font->drawString(msg, 0, 0);
+        
     }
     
     float lastDist(){

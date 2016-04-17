@@ -20,7 +20,7 @@ class Gui
     
     ofxIntSlider playback_speed;
     ofxIntSlider trace;
-    ofxIntSlider setasLife;
+    ofxLabel setasLife;
     
     ofxButton startTimeGame;
     ofxButton startFruitGame;
@@ -29,11 +29,12 @@ class Gui
     
     ofxLabel name;
     ofxLabel exercice;
+    ofxLabel code;
     ofxLabel timestamp;
+    ofxLabel time;
     ofxLabel counter;
     ofxLabel index;
     ofxLabel current;
-    
     
 public:
     
@@ -42,45 +43,21 @@ public:
         osc = o;
         gui.setup();
         setasPanel.setup();
-        setasPanel.setPosition(10, 150);
+        setasPanel.setPosition(10, 250);
         init();
         
         bVisible = true;
-        load();    }
+        load();
+    }
     
     void draw(){
         name = app->metadata.name;
         exercice = app->metadata.exercice;
-        string stamp =  app->session->timestamp;
-        timestamp = stamp.substr(0, stamp.size()-7);
+        string stamp =  app->session->timestamp.substr(0, stamp.size()-7);
+        timestamp = day(stamp);
         counter = ofToString(app->session->getSize());
         index  = ofToString(app->session->index);
         
-        switch (nivel) {
-            case 1:
-                nivel_as_string = "Una fruta";
-                break;
-            case 2:
-                nivel_as_string = "Dos frutas";
-                break;
-            case 3:
-                nivel_as_string = "Muchas frutas";
-                break;
-            case 4:
-                nivel_as_string = "Platano";
-                break;
-            case 5:
-                nivel_as_string = "Solo manzanas";
-                break;
-            case 6:
-                nivel_as_string = "Solo frutas";
-                break;
-                
-            default:
-                break;
-        }
-        
-        current.setup( "actual", ofToString(app->currentTimeOrFruits) );
         
         app->heatmap.L = trace;
         app->session->speed = playback_speed;
@@ -89,6 +66,10 @@ public:
             gui.draw();
             if(app->metadata.exercice == "Setas"){
                 setasPanel.draw();
+                current = ofToString(app->reactions.n_hits) + "/" + ofToString(Assets::getInstance()->maxItems(app->metadata.variation));
+                time = ofToString(app->ellapsedTime, 1) + "/" + ofToString(Assets::getInstance()->maxTime(app->metadata.variation)) ;
+                code = ofToString(Assets::getInstance()->exerciceCode(app->metadata.variation)) ;
+                
             }
         }
     }
@@ -109,22 +90,28 @@ public:
         bVisible = !bVisible;
     }
     
+    string day(string stamp){
+        vector<string>date = ofSplitString(stamp, "-");
+        if(date.size() < 5) return "";
+        return  date[2] + "/" + date[1] + "/" + date[0] + " " + date[3] + ":" + date[4];
+    }
     
     //--------------------------------------------------------------
     void init(){
         
-        gui.add(name.setup("Nombre", name));
+        gui.add(name.setup("Paciente", name));
         gui.add(exercice.setup("Ejercicio", exercice));
-        
         gui.add(timestamp.setup("Fecha", timestamp));
-        gui.add(counter.setup("Contador", counter));
         
+        gui.add(counter.setup("Frames", counter));
+        trace = 400;
         if(Assets::getInstance()->isViewer()){
             gui.add(index.setup("Posicion", index));
             gui.add(playback_speed.setup( "speed",  2, 1, 20));
             gui.add(trace.setup( "trace",  400, 100, 5000 ));
         }
         else{
+            
             gui.add(calibrate.setup("Calibrate"));
             gui.add(clear.setup("Clear"));
         
@@ -133,20 +120,12 @@ public:
             clear.addListener(this,&Gui::clearPressed);
         
             
-                setasPanel.add(timeCount.setup( "numero", 50, 0, 200 ));
-                setasPanel.add(current.setup( "actual", ofToString(app->currentTimeOrFruits) ));
+            setasPanel.add(current.setup("Frutas", ""));
+            setasPanel.add(time.setup("Tiempo", ""));
+            setasPanel.add(code.setup("Code", ""));
             
-                setasPanel.add(nivel.setup( "nivel", 1, 1, 6 ));
-                setasPanel.add(nivel_as_string.setup("EJERCICIO", "default"));
-            
-                setasPanel.add(setasLife.setup( "life", 10, 5, 50 ));
-            
-                startTimeGame.addListener(this, &Gui::startTimeGamePressed);
-                startFruitGame.addListener(this,&Gui::startFruitGamePressed);
-                setasPanel.add(startTimeGame.setup("Time game"));
-                setasPanel.add(startFruitGame.setup("Fruit game"));
+            setasPanel.add(setasLife.setup( "Maximo vida frutas: " + ofToString(Assets::getInstance()->maxLife(app->metadata.variation)) ));
         
-            
         }
     }
     
@@ -158,22 +137,5 @@ public:
         app->clear();
     }
     
-    void startTimeGamePressed(){
-        osc->sendAction("/startTimeGame", nivel, timeCount, setasLife);
-        app->metadata.variation = "Time game: " + ofToString(int(nivel)) + "; Time: " +  ofToString(int(timeCount)) + "; Life: " +  ofToString(int(setasLife)) + ";";
-        startGame();
-    }
-    
-    void startFruitGamePressed(){
-        osc->sendAction("/startCountGame", nivel, timeCount, setasLife);
-        app->metadata.variation = "Count game :" + ofToString(int(nivel)) + "; Number: " +  ofToString(int(timeCount)) + "; Life: " +  ofToString(int(setasLife)) + ";";
-        startGame();
-    }
-    
-    void startGame(){
-        app->clear();
-        app->setCurrentState(new RecordingState(app));
-        app->session->bSaving = true;
-    }
 };
 

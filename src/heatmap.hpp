@@ -36,10 +36,8 @@ public:
         int size = rot_x->data.size();
         if(size > 1){
             
-            int s = size;
-            if(s > L)
-                s = L;
-                    
+            int s = MIN(size, L);
+            
             for(int i = 1; i < s; i ++){
                 float x = rot_y->dist(size - i);
                 float y = rot_x->dist(size - i);

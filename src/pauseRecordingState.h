@@ -4,6 +4,7 @@
 
 #include "baseState.h"
 #include "app.h"
+#include "OscSender.h"
 
 class PauseRecordingState: public BaseState
 {
@@ -17,6 +18,9 @@ public:
     void next();
     void keypressed(int key);
     void changeMode();
+    
+    OscSender *osc;
+    void setVariation(int v);
 };
 
 #endif

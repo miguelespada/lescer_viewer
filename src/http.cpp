@@ -16,6 +16,32 @@ void HTTP::getMetadata(){
 
 }
 
+bool HTTP::getVariation(int v){
+    ofAddListener(httpUtils.newResponseEvent,this, &HTTP::variationResponse);
+    ofxHttpForm form;
+    form.method = OFX_HTTP_GET;
+    form.action = "http://localhost:3000/fruit/" + ofToString(v) + ".json";
+    httpUtils.addForm(form);
+    return true;
+}
+
+void HTTP::variationResponse(ofxHttpResponse & response){
+    
+    if(response.reasonForStatus == "OK"){
+        ofLogNotice() << "Download succesfull";
+        app->bError = false;
+        Assets::getInstance()->ejercicios_settings.parse(response.responseBody);
+        
+    }
+    else{
+        ofLogError() << "Download error";
+        app->bError = true;
+    }
+    
+    ofRemoveListener(httpUtils.newResponseEvent,this,&HTTP::variationResponse);
+}
+
+
 void HTTP::upload(string csv){
     ofAddListener(httpUtils.newResponseEvent,this, &HTTP::uploadResponse);
     ofxHttpForm form;
@@ -29,6 +55,9 @@ void HTTP::upload(string csv){
     form.addFormField("left_movs", ofToString(app->movs.left));
     form.addFormField("right_movs", ofToString(app->movs.right));
     form.addFormField("reactions", ofToString(app->reactions.getDataRow()));
+    form.addFormField("time", ofToString(app->ellapsedTime));
+    form.addFormField("left_view", ofToString(app->lookingLeft()));
+    form.addFormField("explored", ofToString(app->exploredPercent()));
     httpUtils.addForm(form);
 }
 

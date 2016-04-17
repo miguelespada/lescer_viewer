@@ -26,9 +26,9 @@
 		491E19271C04597300D4160F /* recordingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 491E19251C04597300D4160F /* recordingState.cpp */; };
 		491E192A1C0459A000D4160F /* playbackState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 491E19281C0459A000D4160F /* playbackState.cpp */; };
 		4929816C1C5533BD00C09BB4 /* baseAssets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4929816A1C5533BD00C09BB4 /* baseAssets.cpp */; };
+		49328F8C1CC3839D00F6989E /* OscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49328F8A1CC3839D00F6989E /* OscSender.cpp */; };
 		493E89F01C16E9480036E84F /* OscAdapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 493E89EE1C16E9480036E84F /* OscAdapter.cpp */; };
 		493E8A0E1C16ECEE0036E84F /* baseApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 493E8A071C16ECEE0036E84F /* baseApp.cpp */; };
-		493E8A101C16ECEE0036E84F /* baseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 493E8A0B1C16ECEE0036E84F /* baseState.cpp */; };
 		493E8A111C16ECEE0036E84F /* singletonAssets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 493E8A0D1C16ECEE0036E84F /* singletonAssets.cpp */; };
 		495293161C05B8840080546C /* pauseRecordingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 495293141C05B8840080546C /* pauseRecordingState.cpp */; };
 		4952931C1C05DE640080546C /* session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4952931A1C05DE640080546C /* session.cpp */; };
@@ -36,6 +36,7 @@
 		495293211C0628640080546C /* heatmap.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 495293201C0628640080546C /* heatmap.hpp */; };
 		499869CA1BB04EF0007D3A0F /* arduino.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 499869C81BB04EF0007D3A0F /* arduino.cpp */; };
 		49B4D85C1B9879140087AAB6 /* http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49B4D85A1B9879140087AAB6 /* http.cpp */; };
+		49E1E98C1CC2BDDD002947D2 /* baseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49E1E98A1CC2BDDD002947D2 /* baseState.cpp */; };
 		49EF2FD11C5902D300B8806F /* heatmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 49EF2FCF1C5902D300B8806F /* heatmap.c */; };
 		4ADB88E2FB52E76A471065DE /* ofxOscParameterSync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AED834CE4DEC5260AF302A2 /* ofxOscParameterSync.cpp */; };
 		4B3ED367CA852D522E2EE996 /* ofxUI2DPad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1553D7111BCBE7834BCC0784 /* ofxUI2DPad.cpp */; };
@@ -212,12 +213,12 @@
 		491E19341C04AFF000D4160F /* rotation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rotation.hpp; sourceTree = "<group>"; };
 		4929816A1C5533BD00C09BB4 /* baseAssets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = baseAssets.cpp; path = src/baseAssets.cpp; sourceTree = SOURCE_ROOT; };
 		4929816B1C5533BD00C09BB4 /* baseAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = baseAssets.h; path = src/baseAssets.h; sourceTree = SOURCE_ROOT; };
+		49328F8A1CC3839D00F6989E /* OscSender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscSender.cpp; sourceTree = "<group>"; };
+		49328F8B1CC3839D00F6989E /* OscSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscSender.h; sourceTree = "<group>"; };
 		493E89EE1C16E9480036E84F /* OscAdapter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscAdapter.cpp; sourceTree = "<group>"; };
 		493E89EF1C16E9480036E84F /* OscAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscAdapter.h; sourceTree = "<group>"; };
 		493E8A071C16ECEE0036E84F /* baseApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = baseApp.cpp; sourceTree = "<group>"; };
 		493E8A081C16ECEE0036E84F /* baseApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseApp.h; sourceTree = "<group>"; };
-		493E8A0B1C16ECEE0036E84F /* baseState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = baseState.cpp; sourceTree = "<group>"; };
-		493E8A0C1C16ECEE0036E84F /* baseState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseState.h; sourceTree = "<group>"; };
 		493E8A0D1C16ECEE0036E84F /* singletonAssets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = singletonAssets.cpp; sourceTree = "<group>"; };
 		495293141C05B8840080546C /* pauseRecordingState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pauseRecordingState.cpp; sourceTree = "<group>"; };
 		495293151C05B8840080546C /* pauseRecordingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pauseRecordingState.h; sourceTree = "<group>"; };
@@ -230,6 +231,8 @@
 		499869C91BB04EF0007D3A0F /* arduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arduino.h; sourceTree = "<group>"; };
 		49B4D85A1B9879140087AAB6 /* http.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = http.cpp; sourceTree = "<group>"; };
 		49B4D85B1B9879140087AAB6 /* http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http.h; sourceTree = "<group>"; };
+		49E1E98A1CC2BDDD002947D2 /* baseState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = baseState.cpp; path = src/baseState.cpp; sourceTree = SOURCE_ROOT; };
+		49E1E98B1CC2BDDD002947D2 /* baseState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = baseState.h; path = src/baseState.h; sourceTree = SOURCE_ROOT; };
 		49EF2FCF1C5902D300B8806F /* heatmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = heatmap.c; sourceTree = "<group>"; };
 		49EF2FD01C5902D300B8806F /* heatmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heatmap.h; sourceTree = "<group>"; };
 		4AEA0D08C3B0323FEDC8D974 /* ofxUIImageSampler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUIImageSampler.h; path = ../../../addons/ofxUI/src/ofxUIImageSampler.h; sourceTree = SOURCE_ROOT; };
@@ -501,10 +504,10 @@
 			children = (
 				493E8A071C16ECEE0036E84F /* baseApp.cpp */,
 				493E8A081C16ECEE0036E84F /* baseApp.h */,
-				493E8A0B1C16ECEE0036E84F /* baseState.cpp */,
+				49E1E98A1CC2BDDD002947D2 /* baseState.cpp */,
+				49E1E98B1CC2BDDD002947D2 /* baseState.h */,
 				4929816A1C5533BD00C09BB4 /* baseAssets.cpp */,
 				4929816B1C5533BD00C09BB4 /* baseAssets.h */,
-				493E8A0C1C16ECEE0036E84F /* baseState.h */,
 				493E8A0D1C16ECEE0036E84F /* singletonAssets.cpp */,
 				4B948DEC4411B26F3C9BE5DE /* assets.cpp */,
 				5EDDE28A9F00A9326EB8BEDD /* assets.h */,
@@ -518,6 +521,8 @@
 			children = (
 				493E89EE1C16E9480036E84F /* OscAdapter.cpp */,
 				493E89EF1C16E9480036E84F /* OscAdapter.h */,
+				49328F8A1CC3839D00F6989E /* OscSender.cpp */,
+				49328F8B1CC3839D00F6989E /* OscSender.h */,
 				49B4D85A1B9879140087AAB6 /* http.cpp */,
 				49B4D85B1B9879140087AAB6 /* http.h */,
 				499869C81BB04EF0007D3A0F /* arduino.cpp */,
@@ -1040,6 +1045,7 @@
 				9D44DC88EF9E7991B4A09951 /* tinyxmlerror.cpp in Sources */,
 				5A4349E9754D6FA14C0F2A3A /* tinyxmlparser.cpp in Sources */,
 				491E19271C04597300D4160F /* recordingState.cpp in Sources */,
+				49E1E98C1CC2BDDD002947D2 /* baseState.cpp in Sources */,
 				BEDFEE7400C58EA4E412B757 /* ofxJSONElement.cpp in Sources */,
 				FB84AAF8D1B7A95266DB5C09 /* jsoncpp.cpp in Sources */,
 				9F5C6DD965B4F3A6DB5B88F8 /* ofxUI2DGraph.cpp in Sources */,
@@ -1081,10 +1087,10 @@
 				ADE7C2AFC51E3F7E5E389026 /* ofxUISortableList.cpp in Sources */,
 				BFEFCE32DAFE10A8EB519F6C /* ofxUISpacer.cpp in Sources */,
 				52AFF80A869790144ACCC9BA /* ofxUISpectrum.cpp in Sources */,
+				49328F8C1CC3839D00F6989E /* OscSender.cpp in Sources */,
 				1DAAC3FB4B98B08AE63F4687 /* ofxUISuperCanvas.cpp in Sources */,
 				5AE95ADB5549701423B6DA48 /* ofxUITabBar.cpp in Sources */,
 				C961BE22AB9A8CCF037FC18F /* ofxUITextArea.cpp in Sources */,
-				493E8A101C16ECEE0036E84F /* baseState.cpp in Sources */,
 				F8D05F7C7F785CE323983B47 /* ofxUITextInput.cpp in Sources */,
 				493E8A0E1C16ECEE0036E84F /* baseApp.cpp in Sources */,
 				04C82720B149CE576B8CBB06 /* ofxUIToggle.cpp in Sources */,

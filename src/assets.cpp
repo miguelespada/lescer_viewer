@@ -20,6 +20,7 @@ void Assets::loadAssets(){
     loadImage(&supermercado, "supermercado.jpg");
     loadImage(&joystick, "joystick.png");
     loadImage(&wireframe_head, "wireframe_head.png");
+    
 }
 
 bool Assets::isViewer(){
@@ -28,4 +29,28 @@ bool Assets::isViewer(){
 
 string Assets::dataPath(){
     return getData("data_path").asString();
+}
+
+int Assets::maxLife(int i){
+    return ejercicios_settings["items_life"].asInt();
+}
+
+int Assets::maxTime(int i){
+    if(i == 0) return 0;
+    return ejercicios_settings["maximo_tiempo"].asInt();
+}
+
+int Assets::maxItems(int i){
+    if(i == 0) return 0;
+    return ejercicios_settings["numero_frutas"].asInt();
+}
+
+string Assets::exerciceText(int i){
+    if(i == 0) return "Selecciona ejercicio";
+    return ejercicios_settings["texto"].asString();
+}
+
+int Assets::exerciceCode(int i){
+    if(i == 0) return 0;
+    return ejercicios_settings["code"].asInt();
 }

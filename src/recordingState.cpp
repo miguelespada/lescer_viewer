@@ -2,11 +2,17 @@
 #include "pauseRecordingState.h"
 #include "pausePlaybackState.h"
 #include "session.h"
+#include "OscSender.h"
 
 
 RecordingState::RecordingState(App *a):BaseState(a){
     BaseState::initialize();
     app->session->bSaving = true;
+    
+    if(app->session->getSize() == 0)
+        app->clear();
+    
+    osc = new OscSender();
 };
 
 RecordingState::~RecordingState(){
@@ -14,54 +20,38 @@ RecordingState::~RecordingState(){
 };
 
 void RecordingState::draw(){
-    ofPushMatrix();
-    ofPushStyle();
-    
     ofBackground(255, 200, 200);
-    
-    ofSetColor(0);
-    ofTrueTypeFont *font = Assets::getInstance()->getFont(40);
-    
-    string msg = "FRAMES: " + ofToString(app->session->getSize());
-    
-    font->drawString(msg, 230, 50);
-    
-    font = Assets::getInstance()->getFont(12);
-    msg = "[ESPACIO] para PARAR session";
-    
-    font->drawString(msg, 230, 80);
-    
-    if(app->metadata.exercice == "Setas")
-        font->drawString(app->metadata.variation, 230, 100);
-
-    
-    ofSetColor(255, 0, 0);
-    ofCircle(700, 30, 10);
-    
-    ofPopStyle();
-
-    ofPopMatrix();
-    
     app->drawData();
     app->drawConnectionInfo();
+    
+    
+    ofTrueTypeFont *font = Assets::getInstance()->getFont(16);
+    if(app->metadata.exercice == "Setas")
+        font->drawString(ofToString(Assets::getInstance()->exerciceText(app->metadata.variation)), 230, 60);
+
 };
 
 void RecordingState::update(){
     app->bProcessData = true;
+    app->ellapsedTime += ofGetLastFrameTime();
+    
+    if(app->ellapsedTime >= Assets::getInstance()->maxTime(app->metadata.variation))
+        next();
+    if(app->reactions.n_hits >= Assets::getInstance()->maxItems(app->metadata.variation))
+        next();
+    
+    
 };
 
 void RecordingState::next(){
     app->setCurrentState(new PauseRecordingState(app));
+    osc->sendAction("/end", 0);
+    delete osc;
     delete this;
 };
 
 void RecordingState::keypressed(int key){
     switch (key) {
-        case ' ':
-            next();
-            break;
-        case 13:
-            break;
         default:
             break;
     }

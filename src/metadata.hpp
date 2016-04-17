@@ -4,12 +4,12 @@ class Metadata{
 public:
     string name;
     string exercice;
-    string variation;
+    int variation;
     
     Metadata(){
         name = "";
         exercice = "";
-        variation = "";
+        variation = 0;
     }
     
     void update(ofxJSONElement data){

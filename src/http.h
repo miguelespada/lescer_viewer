@@ -18,4 +18,8 @@ public:
     void downloadResponse(ofxHttpResponse & response);
     void metadataResponse(ofxHttpResponse & response);
     
+    bool getVariation(int v);
+    
+    void variationResponse(ofxHttpResponse & response);
+    
 };

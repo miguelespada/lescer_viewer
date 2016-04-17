@@ -40,6 +40,14 @@ public:
     ofImage joystick;
     
     ofVideoPlayer myVideo;
+    
+    
+    ofxJSONElement ejercicios_settings;
+    int maxLife(int i);
+    int maxTime(int i);
+    int maxItems(int i);
+    string exerciceText(int i);
+    int exerciceCode(int i);
 };
 
 #endif

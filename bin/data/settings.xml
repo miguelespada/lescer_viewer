@@ -11,4 +11,9 @@
 	<speed>2</speed>
 	<trace>400</trace>
 	<actual>0</actual>
-</group>
+<EJERCICIO>Una fruta</EJERCICIO>
+	<life>10</life>
+<Frutas>0/50</Frutas>
+	<Tiempo>0.0/50</Tiempo>
+	<Vida_de_las_setas>14</Vida_de_las_setas>
+</group>

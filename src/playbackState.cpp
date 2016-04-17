@@ -28,8 +28,6 @@ void PlaybackState::draw(){
     
     font->drawString(msg, 230, 20);
     
-    if(app->metadata.exercice == "Setas")
-        font->drawString(app->metadata.variation, 230, 100);
     
     ofPopStyle();
     

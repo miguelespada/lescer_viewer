@@ -1,12 +1,13 @@
 #include "OscAdapter.h"
 #include "http.h"
+#include "session.h"
+#include "recordingState.h"
 
 OscAdapter::OscAdapter(App *a){
     app = a;
     int localPort = a->getAssets()->getLocalPort();
 
     receiver = new ofxOscReceiver;
-    sender = new ofxOscSender;
 
     receiver->setup(localPort);
 
@@ -16,7 +17,6 @@ OscAdapter::OscAdapter(App *a){
     host = a->getAssets()->getRemoteIp();
     port = a->getAssets()->getRemotePort();
 
-    sender->setup(host, port);
     cout << "Sending to "<< host << " " << port << endl;
 
     ofAddListener(ofEvents().update, this, &OscAdapter::update);
@@ -24,7 +24,6 @@ OscAdapter::OscAdapter(App *a){
 
 OscAdapter::~OscAdapter(){
     delete receiver;
-    delete sender;
 }
 
 void OscAdapter::update(ofEventArgs &args){
@@ -36,30 +35,6 @@ void OscAdapter::update(ofEventArgs &args){
             processOscMessage(m);
         }
     }
-}
-
-void OscAdapter::sendAction(string msg, int param){
-    ofxOscMessage m;
-    m.setAddress(msg);
-    m.addIntArg(param);
-    sender->sendMessage(m);
-}
-
-void OscAdapter::sendAction(string msg, int param, int param2){
-    ofxOscMessage m;
-    m.setAddress(msg);
-    m.addIntArg(param);
-    m.addIntArg(param2);
-    sender->sendMessage(m);
-}
-
-void OscAdapter::sendAction(string msg, int param, int param2, int param3){
-    ofxOscMessage m;
-    m.setAddress(msg);
-    m.addIntArg(param);
-    m.addIntArg(param2);
-    m.addIntArg(param3);
-    sender->sendMessage(m);
 }
 
 void OscAdapter::processOscMessage(ofxOscMessage msg){
@@ -88,11 +63,23 @@ void OscAdapter::processOscMessage(ofxOscMessage msg){
     if(msg.getAddress() == "/reaction"){
         app->reactions.add(msg.getArgAsInt32(0), msg.getArgAsFloat(1));
     }
+    
+    if(msg.getAddress() == "/pause"){
+        app->current_state->next();
 
-    if(msg.getAddress() == "/currentTime" || msg.getAddress() == "/currentFruits"){
-        app->currentTimeOrFruits = msg.getArgAsInt32(0);
-        if(msg.getArgAsInt32(0) == 0)
-            app->current_state->next();
+    }
+    
+    if(msg.getAddress() == "/variation"){
+        app->metadata.variation = msg.getArgAsInt32(0);
+    }
+    
+    
+    if(msg.getAddress() == "/new"){
+        if(app->metadata.variation == 0)
+            return;
+        app->clear();
+        app->setCurrentState(new RecordingState(app));
+        app->session->bSaving = true;
     }
 
 

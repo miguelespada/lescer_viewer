@@ -7,6 +7,7 @@ BaseAssets::BaseAssets(){
     default_font = "ProximaNova.otf";
     ofTrueTypeFont::setGlobalDpi(72);
     clearFonts();
+    
 }
 
 void BaseAssets::clearFonts(){

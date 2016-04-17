@@ -26,7 +26,8 @@ public:
     JoystickMovs movs;
     Reactions reactions;
     
-    int currentTimeOrFruits;
+    float ellapsedTime;
+    float lookingLeft();
     
     App();
     ~App(){};
@@ -68,6 +69,10 @@ public:
     void addJoystickMov(float m);
     
     bool bProcessData;
+    
+    float exploredPercent();
+    
+    bool getVariation(int v);
 };
 
 

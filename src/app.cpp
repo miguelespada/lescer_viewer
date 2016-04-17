@@ -21,7 +21,6 @@ App::App():BaseApp(){
 
     heatmap.rot_x = &rotations[X];
     heatmap.rot_y = &rotations[Y];
-    currentTimeOrFruits = 0;
 
     bProcessData = true;
 
@@ -40,7 +39,7 @@ void App::clear(){
     heatmap.clear();
     movs.clear();
     reactions.clear();
-    currentTimeOrFruits = 0;
+    ellapsedTime = 0;
 }
 
 void App::getMetadata(){
@@ -103,6 +102,10 @@ void App::addData(float pos_x, float pos_y, float x, float y, float z){
 
     session->add();
 
+}
+
+float App::lookingLeft(){
+    return rotations[Y].lookingUp();
 }
 
 void App::drawData(){
@@ -238,6 +241,40 @@ void App::addJoystickMov(float m){
 
 }
 
+float App::exploredPercent(){
+    bool explored[100][100];
+    
+    for(int i = 0; i < 100; i ++){
+        for(int j = 0; j < 100; j ++){
+            explored[i][j] = false;
+        }
+    }
+    
+    for(int i = 1; i < session->getSize(); i ++){
+        float y = ofAngleDifferenceDegrees(rotations[X].data[i], heatmap.rot_x->ref);
+        float x = ofAngleDifferenceDegrees(rotations[Y].data[i], heatmap.rot_y->ref);
+        x = ofMap(x, -180, 180, 0, 100, true);
+        y = ofMap(x, -180, 180, 0, 100, true);
+        explored[(int) x][(int) y] = true;
+        
+    }
+    
+    int e = 0;
+    
+    for(int i = 0; i < 100; i ++){
+        for(int j = 0; j < 100; j ++){
+            if(explored[i][j]) e += 1;
+        }
+    }
+    
+    return  e / float(100*100);
+    
+}
+
+bool App::getVariation(int v){
+   return http->getVariation(v - 1);
+}
+
 void App::dumpHeatmap(){
 
     static const size_t size = 1000;
@@ -246,43 +283,47 @@ void App::dumpHeatmap(){
     int M = 21;
     float hist[M][M];
 
-    for(int i = 0; i < M; i ++){
-        for(int j = 0; j < M; j ++){
-            hist[i][j] = 0;
-        }
-    }
+//    for(int i = 0; i < M; i ++){
+//        for(int j = 0; j < M; j ++){
+//            hist[i][j] = 0;
+//        }
+//    }
+    
     for(int i = 1; i < session->getSize(); i ++){
-        float y = ofAngleDifferenceDegrees(session->getX(i), heatmap.rot_x->ref);
-        float x = ofAngleDifferenceDegrees(session->getY(i), heatmap.rot_y->ref);
+        float y = ofAngleDifferenceDegrees(rotations[X].data[i], heatmap.rot_x->ref);
+        float x = ofAngleDifferenceDegrees(rotations[Y].data[i], heatmap.rot_y->ref);
         x = ofMap(x, 120, -120, 0, size);
-        y = ofMap(y, -120, 120, 0, size);
-         heatmap_add_point(hm, x, y);
-
+        y = ofMap(y, 120, -120, 0, size);
+        heatmap_add_point(hm, x, y);
+        
+        
         x = ofMap(x, 0, size, 0, M - 1, true);
         y = ofMap(y, 0, size, 0, M - 1, true);
 
         hist[(int) x][(int) y] += 1;
     }
+    
+    
+    
 
 
-    string str = "1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21";
-    str += "\n";
-    for(int j = 0; j < M; j ++){
-        for(int i = 0; i < M; i ++){
-            hist[i][j] = hist[i][j] / (float) session->getSize();
-            hist[i][j] *= 100;
-            str += ofToString(round(hist[i][j] * 100) / 100.0);
-            if( i != M - 1)
-                str += ";";
-        }
-        if( j != M - 1)
-            str += "\n";
-    }
-
-    cout << Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".csv";
-
-    ofFile file( Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".csv", ofFile::WriteOnly);
-    file << str;
+//    string str = "1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21";
+//    str += "\n";
+//    for(int j = 0; j < M; j ++){
+//        for(int i = 0; i < M; i ++){
+//            hist[i][j] = hist[i][j] / (float) session->getSize();
+//            hist[i][j] *= 100;
+//            str += ofToString(round(hist[i][j] * 100) / 100.0);
+//            if( i != M - 1)
+//                str += ";";
+//        }
+//        if( j != M - 1)
+//            str += "\n";
+//    }
+//
+//
+//    ofFile file( Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".csv", ofFile::WriteOnly);
+//    file << str;
 
 
 
@@ -293,6 +334,7 @@ void App::dumpHeatmap(){
     ofImage img;
     img.allocate(size, size, OF_IMAGE_COLOR_ALPHA);
     img.setFromPixels(pixels, size, size, OF_IMAGE_COLOR_ALPHA);
+    cout <<  Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".png" << endl;
     img.saveImage( Assets::getInstance()->dataPath() + ofToString(metadata.name)+ "-" + session->timestamp + ".png");
 
 }
