@@ -8,7 +8,7 @@ void ofApp::setup(){
     gui = new Gui(&app, osc);
     ofSetFrameRate(15);
     ofEnableSmoothing();
-    ofSetWindowPosition(0, 0);
+    ofSetWindowPosition(0, 40);
 }
 
 //--------------------------------------------------------------
