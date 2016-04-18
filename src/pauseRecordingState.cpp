@@ -23,11 +23,12 @@ void PauseRecordingState::draw(){
     ofSetColor(0);
     
     ofTrueTypeFont *font = Assets::getInstance()->getFont(16);
-    font->drawString("[c] para CALIBRAR", 230, 20);
     if(!app->session->bSaved){
         ofBackground(200, 200, 150);
         font->drawString("[s] para GUARDAR session", 230, 40);
     }
+    font->drawString("[c] para CALIBRAR", 230, 80);
+
     
     
     if(app->metadata.exercice == "Setas")
