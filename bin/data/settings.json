@@ -1,6 +1,6 @@
 {
   "local_port" : 8001,
-  "remote_ip" : "127.0.0.1",
+  "remote_ip" : "169.254.99.155",
   "remote_port" : 8080,
   "width" : 1240,
   "height" : 800,

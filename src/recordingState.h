@@ -20,6 +20,8 @@ public:
     void changeMode();
 
     OscSender *osc;
+    
+    void clean();
 };
 
 #endif

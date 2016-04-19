@@ -74,6 +74,10 @@ void PauseRecordingState::keypressed(int key){
     }
 }
 
+void PauseRecordingState::clean(){
+     osc->sendAction("/end", 0);
+}
+
 void PauseRecordingState::changeMode(){
     app->setCurrentState(new PausePlaybackState(app));
     delete this;

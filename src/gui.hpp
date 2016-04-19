@@ -134,6 +134,7 @@ public:
     
     void clearPressed(){
         app->clear();
+        app->current_state->clean();
     }
     
 };

@@ -21,6 +21,8 @@ public:
     
     OscSender *osc;
     void setVariation(int v);
+    
+    void clean();
 };
 
 #endif

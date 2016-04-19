@@ -70,7 +70,7 @@ void OscAdapter::processOscMessage(ofxOscMessage msg){
     }
     
     if(msg.getAddress() == "/variation"){
-        app->metadata.variation = msg.getArgAsInt32(0);
+        app->metadata.variation = ofToInt(msg.getArgAsString(0));
     }
     
     

@@ -274,6 +274,7 @@ float App::exploredPercent(){
 bool App::getVariation(int v){
     http->getVariation(v - 1);
     while(http->bWaiting){
+        sleep(1);
         continue;
     }
    return true;

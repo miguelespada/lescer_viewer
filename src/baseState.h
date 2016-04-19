@@ -26,6 +26,7 @@ public:
     virtual void keypressed(int key){}
     virtual void click(int x, int y);
     virtual void changeMode(){};
+    virtual void clean(){};
     
 };
 

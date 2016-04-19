@@ -35,17 +35,17 @@ void RecordingState::update(){
     app->bProcessData = true;
     app->ellapsedTime += ofGetLastFrameTime();
     
-    if(app->ellapsedTime >= Assets::getInstance()->maxTime(app->metadata.variation))
+    if(app->ellapsedTime >= Assets::getInstance()->maxTime(app->metadata.variation ||
+        app->reactions.n_hits >= Assets::getInstance()->maxItems(app->metadata.variation))){
+        osc->sendAction("/end", 0);
         next();
-    if(app->reactions.n_hits >= Assets::getInstance()->maxItems(app->metadata.variation))
-        next();
+    }
     
     
 };
 
 void RecordingState::next(){
     app->setCurrentState(new PauseRecordingState(app));
-    osc->sendAction("/end", 0);
     delete osc;
     delete this;
 };
@@ -55,6 +55,12 @@ void RecordingState::keypressed(int key){
         default:
             break;
     }
+}
+
+void RecordingState::clean(){
+    cout << "CLEAN" << endl;
+    osc->sendAction("/end", 0);
+    next();
 }
 
 void RecordingState::changeMode(){
