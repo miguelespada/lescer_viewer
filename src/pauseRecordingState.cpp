@@ -21,16 +21,18 @@ void PauseRecordingState::draw(){
     ofBackground(200);
 
     ofSetColor(0);
-    
+
     ofTrueTypeFont *font = Assets::getInstance()->getFont(16);
     if(!app->session->bSaved){
         ofBackground(200, 200, 150);
         font->drawString("[s] para GUARDAR session", 230, 40);
     }
-    font->drawString("[c] para CALIBRAR", 230, 80);
+    if(app->calibrated)
+        font->drawString("CALIBRADO\n[c] para volver CALIBRAR", 230, 80);
+    else
+        font->drawString("[c] para CALIBRAR", 230, 80);
 
-    
-    
+
     if(app->metadata.exercice == "Setas")
         font->drawString(ofToString(Assets::getInstance()->exerciceText(app->metadata.variation)), 230, 60);
 
@@ -46,7 +48,7 @@ void PauseRecordingState::update(){
     app->bProcessData = false;
     if(app->session->bSaved)
         app->bProcessData = true;
-        
+
 };
 
 void PauseRecordingState::next(){
@@ -66,8 +68,8 @@ void PauseRecordingState::keypressed(int key){
             osc->sendAction("/end", 0);
         case 'c':
             app->setRotationRef();
-            
-            
+
+
             break;
         default:
             break;

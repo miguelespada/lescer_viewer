@@ -23,6 +23,7 @@ App::App():BaseApp(){
     heatmap.rot_y = &rotations[Y];
 
     bProcessData = true;
+    calibrated = false;
 
 
 
@@ -205,6 +206,7 @@ void App::setRotationRef(){
     rotations[X].setRef();
     rotations[Y].setRef();
     rotations[Z].setRef();
+    calibrated = true;
 }
 
 void App::newPlaybackPosition(){
@@ -243,38 +245,38 @@ void App::addJoystickMov(float m){
 
 float App::exploredPercent(){
     bool explored[100][100];
-    
+
     for(int i = 0; i < 100; i ++){
         for(int j = 0; j < 100; j ++){
             explored[i][j] = false;
         }
     }
-    
+
     for(int i = 1; i < session->getSize(); i ++){
         float y = ofAngleDifferenceDegrees(rotations[X].data[i], heatmap.rot_x->ref);
         float x = ofAngleDifferenceDegrees(rotations[Y].data[i], heatmap.rot_y->ref);
         x = ofMap(x, -180, 180, 0, 100, true);
         y = ofMap(x, -180, 180, 0, 100, true);
         explored[(int) x][(int) y] = true;
-        
+
     }
-    
+
     int e = 0;
-    
+
     for(int i = 0; i < 100; i ++){
         for(int j = 0; j < 100; j ++){
             if(explored[i][j]) e += 1;
         }
     }
-    
+
     return  e / float(100*100);
-    
+
 }
 
 bool App::getVariation(int v){
     http->getVariation(v - 1);
     while(http->bWaiting){
-        sleep(1);
+        ofSleepMillis(500);
         continue;
     }
    return true;
@@ -293,23 +295,23 @@ void App::dumpHeatmap(){
 //            hist[i][j] = 0;
 //        }
 //    }
-    
+
     for(int i = 1; i < session->getSize(); i ++){
         float y = ofAngleDifferenceDegrees(rotations[X].data[i], heatmap.rot_x->ref);
         float x = ofAngleDifferenceDegrees(rotations[Y].data[i], heatmap.rot_y->ref);
         x = ofMap(x, 120, -120, 0, size);
-        y = ofMap(y, 120, -120, 0, size);
+        y = ofMap(y, -120, 120, 0, size);
         heatmap_add_point(hm, x, y);
-        
-        
+
+
         x = ofMap(x, 0, size, 0, M - 1, true);
         y = ofMap(y, 0, size, 0, M - 1, true);
 
         hist[(int) x][(int) y] += 1;
     }
-    
-    
-    
+
+
+
 
 
 //    string str = "1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21";

@@ -1,11 +1,11 @@
 {
   "local_port" : 8001,
-  "remote_ip" : "169.254.99.155",
+  "remote_ip" : "127.0.0.1",
   "remote_port" : 8080,
   "width" : 1240,
   "height" : 800,
   "scale" : 1,
   "viewer" : 0,
-  // "data_path" : "C:\\Users\\LESCER\\Desktop\\LESCER_DATA\\"
-  "data_path" : "/Users/miguel/Desktop/"
+  "data_path" : "C:\\Users\\LESCER\\Desktop\\LESCER_DATA\\"
+  //"data_path" : "/Users/miguel/Desktop/"
  }
