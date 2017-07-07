@@ -53,7 +53,7 @@ public:
     void draw(){
         name = app->metadata.name;
         exercice = app->metadata.exercice;
-        string stamp =  app->session->timestamp.substr(0, stamp.size()-7);
+        string stamp =  app->session->timestamp.substr(0, app->session->timestamp.size()-7);
         timestamp = day(stamp);
         counter = ofToString(app->session->getSize());
         index  = ofToString(app->session->index);
