@@ -1,0 +1,2595 @@
+# depslib dependency file v1.0
+1499420530 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\icon.rc
+
+1499423405 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxjson\libs\jsoncpp\src\jsoncpp.cpp
+	"json/json.h"
+	<json/assertions.h>
+	<json/reader.h>
+	<json/value.h>
+	"json_tool.h"
+	<utility>
+	<cstdio>
+	<cassert>
+	<cstring>
+	<istream>
+	<stdlib.h>
+	<assert.h>
+	<json/assertions.h>
+	<json/value.h>
+	<json/writer.h>
+	"json_batchallocator.h"
+	<math.h>
+	<sstream>
+	<utility>
+	<cstring>
+	<cassert>
+	<cpptl/conststring.h>
+	<cstddef>
+	"json_internalarray.inl"
+	"json_internalmap.inl"
+	"json_valueiterator.inl"
+	<json/writer.h>
+	"json_tool.h"
+	<utility>
+	<assert.h>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<iomanip>
+
+1499423405 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxjson\libs\jsoncpp\include\json\json.h
+	<cpptl/config.h>
+	"config.h"
+	"forwards.h"
+	"forwards.h"
+	<string>
+	<vector>
+	<map>
+	<cpptl/smallmap.h>
+	<cpptl/forwards.h>
+	"features.h"
+	"value.h"
+	<deque>
+	<iosfwd>
+	<stack>
+	<string>
+	"value.h"
+	<vector>
+	<string>
+	<stdlib.h>
+	"config.h"
+	<stdexcept>
+
+1499423405 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxjson\src\ofxjsonelement.cpp
+	"ofxJSONElement.h"
+
+1499423405 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxjson\src\ofxjsonelement.h
+	<string>
+	"json/json.h"
+	"ofLog.h"
+	"ofURLFileLoader.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\utils\oflog.h
+	"ofConstants.h"
+	"ofFileUtils.h"
+	"ofTypes.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\utils\ofconstants.h
+	<stdint.h>
+	<TargetConditionals.h>
+	<windows.h>
+	"GL\glew.h"
+	"GL\wglew.h"
+	"glu.h"
+	<stdint.h>
+	<functional>
+	<unistd.h>
+	"GL/glew.h"
+	<OpenGL/gl.h>
+	<ApplicationServices/ApplicationServices.h>
+	<unistd.h>
+	"bcm_host.h"
+	"GLES/gl.h"
+	"GLES/glext.h"
+	"GLES2/gl2.h"
+	"GLES2/gl2ext.h"
+	"EGL/egl.h"
+	"EGL/eglext.h"
+	<GL/glew.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<typeinfo>
+	<unistd.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	"tesselator.h"
+	<cstdlib>
+	<cstdio>
+	<cstdarg>
+	<cmath>
+	<ctime>
+	<cstdlib>
+	<string>
+	<iostream>
+	<vector>
+	<cstring>
+	<sstream>
+	<iomanip>
+	<fstream>
+	<algorithm>
+	<cfloat>
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\glew\include\gl\wglew.h
+	<windows.h>
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\glu\include\glu.h
+	"glu_mangle.h"
+	<GL/gl.h>
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\tess2\include\tesselator.h
+	<TargetConditionals.h>
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\utils\offileutils.h
+	"ofConstants.h"
+	"Poco/File.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\file.h
+	"Poco/Foundation.h"
+	"Poco/Timestamp.h"
+	<vector>
+	"File_WINCE.h"
+	"Poco/File_WIN32U.h"
+	"Poco/File_WIN32.h"
+	"Poco/File_VX.h"
+	"Poco/File_UNIX.h"
+	"Poco/File_VMS.h"
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\foundation.h
+	"Poco/Config.h"
+	"Poco/Platform.h"
+	"Poco/Platform_WIN32.h"
+	"Poco/Platform_VMS.h"
+	"Poco/Platform_VX.h"
+	"Poco/Platform_POSIX.h"
+	"Poco/Bugcheck.h"
+	"Poco/Types.h"
+	<string>
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\config.h
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\platform.h
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\platform_win32.h
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\platform_vms.h
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\platform_vx.h
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\platform_posix.h
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\bugcheck.h
+	"Poco/Foundation.h"
+	<string>
+	<iostream>
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\types.h
+	"Poco/Foundation.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\timestamp.h
+	"Poco/Foundation.h"
+	<ctime>
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\file_wince.h
+	"Poco/Foundation.h"
+	"Poco/Timestamp.h"
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\file_win32u.h
+	"Poco/Foundation.h"
+	"Poco/Timestamp.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\file_win32.h
+	"Poco/Foundation.h"
+	"Poco/Timestamp.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\file_vx.h
+	"Poco/Foundation.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\file_unix.h
+	"Poco/Foundation.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\file_vms.h
+	"Poco/Foundation.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\types\oftypes.h
+	"ofConstants.h"
+	"ofColor.h"
+	<memory>
+	<tr1/memory>
+	"Poco/Mutex.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\types\ofcolor.h
+	<limits>
+	"ofMath.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\math\ofmath.h
+	"ofPoint.h"
+	"ofConstants.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\types\ofpoint.h
+	"ofVec3f.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\math\ofvec3f.h
+	"ofVec2f.h"
+	"ofVec4f.h"
+	"ofConstants.h"
+	<cmath>
+	<iostream>
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\math\ofvec2f.h
+	"ofConstants.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\math\ofvec4f.h
+	"ofConstants.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\mutex.h
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	"Poco/ScopedLock.h"
+	"Poco/Mutex_WINCE.h"
+	"Poco/Mutex_WIN32.h"
+	"Poco/Mutex_VX.h"
+	"Poco/Mutex_POSIX.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\exception.h
+	"Poco/Foundation.h"
+	<stdexcept>
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\scopedlock.h
+	"Poco/Foundation.h"
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\mutex_wince.h
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	"Poco/UnWindows.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\unwindows.h
+	<windows.h>
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\mutex_win32.h
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	"Poco/UnWindows.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\mutex_vx.h
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	<semLib.h>
+	<errno.h>
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\mutex_posix.h
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	<pthread.h>
+	<errno.h>
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\utils\ofurlfileloader.h
+	<deque>
+	<queue>
+	"ofThread.h"
+	"ofEvents.h"
+	"ofFileUtils.h"
+	"Poco/Condition.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\utils\ofthread.h
+	"Poco/AtomicCounter.h"
+	"Poco/Thread.h"
+	"Poco/Runnable.h"
+	"ofConstants.h"
+	"ofTypes.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\atomiccounter.h
+	"Poco/Foundation.h"
+	"Poco/UnWindows.h"
+	<libkern/OSAtomic.h>
+	"Poco/Mutex.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\thread.h
+	"Poco/Foundation.h"
+	"Poco/Mutex.h"
+	"Poco/Thread_WINCE.h"
+	"Poco/Thread_WIN32.h"
+	"Poco/Thread_VX.h"
+	"Poco/Thread_POSIX.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\thread_wince.h
+	"Poco/Foundation.h"
+	"Poco/Runnable.h"
+	"Poco/UnWindows.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\runnable.h
+	"Poco/Foundation.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\thread_win32.h
+	"Poco/Foundation.h"
+	"Poco/Runnable.h"
+	"Poco/UnWindows.h"
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\thread_vx.h
+	"Poco/Foundation.h"
+	"Poco/Runnable.h"
+	"Poco/SignalHandler.h"
+	"Poco/Event.h"
+	"Poco/RefCountedObject.h"
+	"Poco/AutoPtr.h"
+	<taskLib.h>
+	<taskVarLib.h>
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\signalhandler.h
+	"Poco/Foundation.h"
+	<vector>
+	<setjmp.h>
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\event.h
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	"Poco/Event_WIN32.h"
+	"Poco/Event_VX.h"
+	"Poco/Event_POSIX.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\event_win32.h
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	"Poco/UnWindows.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\event_vx.h
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	<semLib.h>
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\event_posix.h
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	<pthread.h>
+	<errno.h>
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\refcountedobject.h
+	"Poco/Foundation.h"
+	"Poco/AtomicCounter.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\autoptr.h
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	<algorithm>
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\thread_posix.h
+	"Poco/Foundation.h"
+	"Poco/Runnable.h"
+	"Poco/SignalHandler.h"
+	"Poco/Event.h"
+	"Poco/RefCountedObject.h"
+	"Poco/AutoPtr.h"
+	<pthread.h>
+	<limits.h>
+	<sys/select.h>
+	<errno.h>
+	<cstring>
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\events\ofevents.h
+	"ofConstants.h"
+	"ofPoint.h"
+	"ofEventUtils.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\events\ofeventutils.h
+	"ofConstants.h"
+	"Poco/PriorityEvent.h"
+	"Poco/PriorityDelegate.h"
+	"ofDelegate.h"
+	<stdio.h>
+	<stdlib.h>
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\priorityevent.h
+	"Poco/AbstractEvent.h"
+	"Poco/PriorityStrategy.h"
+	"Poco/AbstractPriorityDelegate.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\abstractevent.h
+	"Poco/Foundation.h"
+	"Poco/SingletonHolder.h"
+	"Poco/SharedPtr.h"
+	"Poco/ActiveResult.h"
+	"Poco/ActiveMethod.h"
+	"Poco/Mutex.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\singletonholder.h
+	"Poco/Foundation.h"
+	"Poco/Mutex.h"
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\sharedptr.h
+	"Poco/Foundation.h"
+	"Poco/Exception.h"
+	"Poco/AtomicCounter.h"
+	<algorithm>
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\activeresult.h
+	"Poco/Foundation.h"
+	"Poco/Mutex.h"
+	"Poco/Event.h"
+	"Poco/RefCountedObject.h"
+	"Poco/Exception.h"
+	<algorithm>
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\activemethod.h
+	"Poco/Foundation.h"
+	"Poco/ActiveResult.h"
+	"Poco/ActiveRunnable.h"
+	"Poco/ActiveStarter.h"
+	"Poco/AutoPtr.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\activerunnable.h
+	"Poco/Foundation.h"
+	"Poco/ActiveResult.h"
+	"Poco/Runnable.h"
+	"Poco/RefCountedObject.h"
+	"Poco/AutoPtr.h"
+	"Poco/Exception.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\activestarter.h
+	"Poco/Foundation.h"
+	"Poco/ThreadPool.h"
+	"Poco/ActiveRunnable.h"
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\threadpool.h
+	"Poco/Foundation.h"
+	"Poco/Thread.h"
+	"Poco/Mutex.h"
+	<vector>
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\prioritystrategy.h
+	"Poco/NotificationStrategy.h"
+	"Poco/SharedPtr.h"
+	<vector>
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\notificationstrategy.h
+	"Poco/Foundation.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\abstractprioritydelegate.h
+	"Poco/Foundation.h"
+	"Poco/AbstractDelegate.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\abstractdelegate.h
+	"Poco/Foundation.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\prioritydelegate.h
+	"Poco/Foundation.h"
+	"Poco/AbstractPriorityDelegate.h"
+	"Poco/PriorityExpire.h"
+	"Poco/FunctionPriorityDelegate.h"
+	"Poco/Mutex.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\priorityexpire.h
+	"Poco/Foundation.h"
+	"Poco/Timestamp.h"
+	"Poco/AbstractPriorityDelegate.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\functionprioritydelegate.h
+	"Poco/Foundation.h"
+	"Poco/AbstractPriorityDelegate.h"
+	"Poco/Mutex.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\events\ofdelegate.h
+	"Poco/AbstractPriorityDelegate.h"
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\condition.h
+	"Poco/Foundation.h"
+	"Poco/Mutex.h"
+	"Poco/ScopedUnlock.h"
+	"Poco/Event.h"
+	"Poco/Exception.h"
+	<deque>
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\scopedunlock.h
+	"Poco/Foundation.h"
+
+1499420531 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\ip\ipendpointname.cpp
+	"IpEndpointName.h"
+	<cstdio>
+	"NetworkingUtils.h"
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\ip\ipendpointname.h
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\ip\networkingutils.h
+
+1499420531 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\ip\posix\networkingutils.cpp
+	"ip/NetworkingUtils.h"
+	<netdb.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<string.h>
+	<stdio.h>
+
+1499420531 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\ip\posix\udpsocket.cpp
+	"ip/UdpSocket.h"
+	<vector>
+	<algorithm>
+	<stdexcept>
+	<assert.h>
+	<signal.h>
+	<math.h>
+	<errno.h>
+	<string.h>
+	<pthread.h>
+	<unistd.h>
+	<stdlib.h>
+	<stdio.h>
+	<netdb.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<netinet/in.h>
+	"ip/PacketListener.h"
+	"ip/TimerListener.h"
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\ip\udpsocket.h
+	"NetworkingUtils.h"
+	"IpEndpointName.h"
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\ip\packetlistener.h
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\ip\timerlistener.h
+
+1499420531 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\ip\win32\networkingutilswin.cpp
+	"ip/NetworkingUtils.h"
+	<winsock2.h>
+	<windows.h>
+	<stdlib.h>
+	<stdio.h>
+
+1499420531 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\ip\win32\udpsocketwin.cpp
+	"ip/UdpSocket.h"
+	<winsock2.h>
+	<windows.h>
+	<mmsystem.h>
+	<vector>
+	<algorithm>
+	<stdexcept>
+	<assert.h>
+	<signal.h>
+	"ip/NetworkingUtils.h"
+	"ip/PacketListener.h"
+	"ip/TimerListener.h"
+
+1499420531 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\osc\oscoutboundpacketstream.cpp
+	"OscOutboundPacketStream.h"
+	<string.h>
+	<stdlib.h>
+	<assert.h>
+	<malloc.h>
+	"OscHostEndianness.h"
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\osc\oscoutboundpacketstream.h
+	"OscTypes.h"
+	"OscException.h"
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\osc\osctypes.h
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\osc\oscexception.h
+	<exception>
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\osc\oschostendianness.h
+
+1499420531 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\osc\oscprintreceivedelements.cpp
+	"OscPrintReceivedElements.h"
+	<iostream>
+	<iomanip>
+	<ctime>
+	<cstring>
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\osc\oscprintreceivedelements.h
+	<iosfwd>
+	"OscReceivedElements.h"
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\osc\oscreceivedelements.h
+	<cstddef>
+	"OscTypes.h"
+	"OscException.h"
+
+1499420531 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\osc\oscreceivedelements.cpp
+	"OscReceivedElements.h"
+	<cassert>
+	"OscHostEndianness.h"
+
+1499420531 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\osc\osctypes.cpp
+	"OscTypes.h"
+
+1499420530 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\src\ofxoscbundle.cpp
+	"ofxOscBundle.h"
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\src\ofxoscbundle.h
+	<vector>
+	"ofxOscMessage.h"
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\src\ofxoscmessage.h
+	"ofxOscArg.h"
+	<vector>
+	<string>
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\src\ofxoscarg.h
+	<string>
+	"ofMain.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\ofmain.h
+	"ofConstants.h"
+	"ofFileUtils.h"
+	"ofLog.h"
+	"ofSystemUtils.h"
+	"ofThread.h"
+	"ofURLFileLoader.h"
+	"ofUtils.h"
+	"ofBaseTypes.h"
+	"ofTypes.h"
+	"ofColor.h"
+	"ofPoint.h"
+	"ofRectangle.h"
+	"ofXml.h"
+	"ofParameter.h"
+	"ofParameterGroup.h"
+	"ofMath.h"
+	"ofVectorMath.h"
+	"ofSerial.h"
+	"ofArduino.h"
+	"ofFbo.h"
+	"ofGLRenderer.h"
+	"ofGLUtils.h"
+	"ofLight.h"
+	"ofMaterial.h"
+	"ofShader.h"
+	"ofTexture.h"
+	"ofVbo.h"
+	"ofVboMesh.h"
+	"ofGLProgrammableRenderer.h"
+	"ofGLRenderer.h"
+	"ofCairoRenderer.h"
+	"ofGraphics.h"
+	"ofImage.h"
+	"ofPath.h"
+	"ofPixels.h"
+	"ofPolyline.h"
+	"ofRendererCollection.h"
+	"ofTessellator.h"
+	"ofTrueTypeFont.h"
+	"ofBaseApp.h"
+	"ofAppRunner.h"
+	"ofSoundStream.h"
+	"ofSoundPlayer.h"
+	"ofVideoGrabber.h"
+	"ofVideoPlayer.h"
+	"ofEvents.h"
+	"of3dUtils.h"
+	"ofCamera.h"
+	"ofEasyCam.h"
+	"ofMesh.h"
+	"ofNode.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\utils\ofsystemutils.h
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\utils\ofutils.h
+	"ofConstants.h"
+	<bitset>
+	"ofLog.h"
+	<shellapi.h>
+	"Poco/Path.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\path.h
+	"Poco/Foundation.h"
+	<vector>
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\types\ofbasetypes.h
+	"ofPoint.h"
+	"ofRectangle.h"
+	"ofConstants.h"
+	"ofColor.h"
+	"ofMesh.h"
+	"ofPixels.h"
+	"ofMatrix4x4.h"
+	"ofTypes.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\types\ofrectangle.h
+	"ofConstants.h"
+	"ofPoint.h"
+	"ofLog.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\3d\ofmesh.h
+	"ofVec3f.h"
+	"ofVec2f.h"
+	"ofColor.h"
+	"ofUtils.h"
+	"ofConstants.h"
+	"ofGLUtils.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\gl\ofglutils.h
+	"ofConstants.h"
+	"ofTypes.h"
+	"ofPixels.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\graphics\ofpixels.h
+	"ofConstants.h"
+	"ofUtils.h"
+	"ofColor.h"
+	"ofMath.h"
+	<limits>
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\math\ofmatrix4x4.h
+	"ofVec3f.h"
+	"ofVec4f.h"
+	"ofQuaternion.h"
+	"ofConstants.h"
+	<cmath>
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\math\ofquaternion.h
+	"ofConstants.h"
+	"ofVec3f.h"
+	"ofVec4f.h"
+	<cmath>
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\utils\ofxml.h
+	"ofMain.h"
+	<numeric>
+	<Poco/DOM/Document.h>
+	<Poco/DOM/DocumentFragment.h>
+	<Poco/DOM/Element.h>
+	<Poco/DOM/DOMParser.h>
+	<Poco/DOM/DOMException.h>
+	<Poco/SAX/SAXException.h>
+	<Poco/XML/XMLString.h>
+	<Poco/XML/XMLWriter.h>
+	<Poco/DOM/DOMParser.h>
+	<Poco/DOM/DOMWriter.h>
+	<Poco/DOM/Document.h>
+	<Poco/DOM/Attr.h>
+	<Poco/DOM/Node.h>
+	<Poco/DOM/Text.h>
+	<Poco/DOM/NodeIterator.h>
+	<Poco/DOM/NodeFilter.h>
+	<Poco/DOM/NamedNodeMap.h>
+	<Poco/DOM/ChildNodesList.h>
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\document.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/AbstractContainerNode.h"
+	"Poco/DOM/DocumentEvent.h"
+	"Poco/DOM/Element.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/NamePool.h"
+	"Poco/AutoReleasePool.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\xml\xml.h
+	"Poco/Foundation.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\abstractcontainernode.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/AbstractNode.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\abstractnode.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/Node.h"
+	"Poco/DOM/MutationEvent.h"
+	"Poco/XML/XMLString.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\node.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/EventTarget.h"
+	"Poco/XML/XMLString.h"
+	"Poco/SAX/NamespaceSupport.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\eventtarget.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/DOMObject.h"
+	"Poco/XML/XMLString.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\domobject.h
+	"Poco/XML/XML.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\xml\xmlstring.h
+	"Poco/XML/XML.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\sax\namespacesupport.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+	<set>
+	<map>
+	<vector>
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\mutationevent.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/Event.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\event.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+	"Poco/DOM/DOMObject.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\documentevent.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\element.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/AbstractContainerNode.h"
+	"Poco/XML/Name.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\xml\name.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\xml\namepool.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/Name.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\autoreleasepool.h
+	"Poco/Foundation.h"
+	<list>
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\documentfragment.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/AbstractContainerNode.h"
+	"Poco/XML/XMLString.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\domparser.h
+	"Poco/XML/XML.h"
+	"Poco/SAX/SAXParser.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\sax\saxparser.h
+	"Poco/XML/XML.h"
+	"Poco/SAX/XMLReader.h"
+	"Poco/XML/ParserEngine.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\sax\xmlreader.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\xml\parserengine.h
+	"Poco/XML/XML.h"
+	<expat.h>
+	"Poco/XML/expat.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XMLStream.h"
+	"Poco/SAX/Locator.h"
+	"Poco/TextEncoding.h"
+	<map>
+	<vector>
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\xml\expat.h
+	<stdlib.h>
+	"expat_external.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\xml\expat_external.h
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\xml\xmlstream.h
+	"Poco/XML/XML.h"
+	<istream>
+	<ostream>
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\sax\locator.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\textencoding.h
+	"Poco/Foundation.h"
+	"Poco/SharedPtr.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\domexception.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLException.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\xml\xmlexception.h
+	"Poco/XML/XML.h"
+	"Poco/Exception.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\sax\saxexception.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLException.h"
+	"Poco/XML/XMLString.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\xml\xmlwriter.h
+	"Poco/XML/XML.h"
+	"Poco/SAX/ContentHandler.h"
+	"Poco/SAX/LexicalHandler.h"
+	"Poco/SAX/DTDHandler.h"
+	"Poco/SAX/NamespaceSupport.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XMLStream.h"
+	"Poco/XML/Name.h"
+	"Poco/TextEncoding.h"
+	"Poco/StreamConverter.h"
+	<vector>
+	<map>
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\sax\contenthandler.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\sax\lexicalhandler.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\sax\dtdhandler.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\streamconverter.h
+	"Poco/Foundation.h"
+	"Poco/TextEncoding.h"
+	"Poco/UnbufferedStreamBuf.h"
+	<istream>
+	<ostream>
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\unbufferedstreambuf.h
+	"Poco/Foundation.h"
+	"Poco/StreamUtil.h"
+	<streambuf>
+	<iosfwd>
+	<ios>
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\streamutil.h
+	"Poco/Foundation.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\domwriter.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+	"Poco/XML/XMLStream.h"
+	"Poco/TextEncoding.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\attr.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/AbstractNode.h"
+	"Poco/DOM/Element.h"
+	"Poco/XML/Name.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\text.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/CharacterData.h"
+	"Poco/XML/XMLString.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\characterdata.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/AbstractNode.h"
+	"Poco/XML/XMLString.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\nodeiterator.h
+	"Poco/XML/XML.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\nodefilter.h
+	"Poco/XML/XML.h"
+	"Poco/XML/XMLString.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\namednodemap.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/DOMObject.h"
+	"Poco/XML/XMLString.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\childnodeslist.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/NodeList.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\dom\nodelist.h
+	"Poco/XML/XML.h"
+	"Poco/DOM/DOMObject.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\types\ofparameter.h
+	"ofEvents.h"
+	"ofTypes.h"
+	"ofUtils.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\types\ofparametergroup.h
+	<map>
+	"Poco/Any.h"
+	"ofConstants.h"
+	"ofLog.h"
+	"ofParameter.h"
+	"ofTypes.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\any.h
+	"Poco/Exception.h"
+	<algorithm>
+	<typeinfo>
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\math\ofvectormath.h
+	"ofVec2f.h"
+	"ofVec3f.h"
+	"ofVec4f.h"
+	"ofMatrix3x3.h"
+	"ofMatrix4x4.h"
+	"ofQuaternion.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\math\ofmatrix3x3.h
+	"ofConstants.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\communication\ofserial.h
+	"ofConstants.h"
+	"ofTypes.h"
+	<termios.h>
+	<winbase.h>
+	<tchar.h>
+	<iostream>
+	<string.h>
+	<setupapi.h>
+	<regstr.h>
+	<winioctl.h>
+	<initguid.h>
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\communication\ofarduino.h
+	<list>
+	<vector>
+	<string>
+	<iostream>
+	"ofEvents.h"
+	"ofSerial.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\gl\offbo.h
+	"ofTexture.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\gl\oftexture.h
+	"ofPoint.h"
+	"ofRectangle.h"
+	"ofBaseTypes.h"
+	"ofConstants.h"
+	"ofVboMesh.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\gl\ofvbomesh.h
+	"ofMesh.h"
+	"ofVbo.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\gl\ofvbo.h
+	"ofConstants.h"
+	"ofVec3f.h"
+	"ofColor.h"
+	"ofUtils.h"
+	"ofMesh.h"
+	"ofGLUtils.h"
+	<map>
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\gl\ofglrenderer.h
+	"ofBaseTypes.h"
+	"ofPolyline.h"
+	"ofMatrix4x4.h"
+	<stack>
+	"ofGraphics.h"
+	"ofMatrixStack.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\graphics\ofpolyline.h
+	"ofPoint.h"
+	"ofConstants.h"
+	<deque>
+	"ofRectangle.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\graphics\ofgraphics.h
+	"ofConstants.h"
+	"ofColor.h"
+	"ofPoint.h"
+	"ofMatrix4x4.h"
+	"ofRectangle.h"
+	"ofTypes.h"
+	"ofBaseTypes.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\utils\ofmatrixstack.h
+	<stack>
+	"ofConstants.h"
+	"ofRectangle.h"
+	"ofGraphics.h"
+	"ofMatrix4x4.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\gl\oflight.h
+	"ofNode.h"
+	"ofColor.h"
+	"of3dGraphics.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\3d\ofnode.h
+	"ofVectorMath.h"
+	"of3dUtils.h"
+	"ofGraphics.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\3d\of3dutils.h
+	"ofVectorMath.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\graphics\of3dgraphics.h
+	"ofConstants.h"
+	"ofColor.h"
+	"ofPoint.h"
+	"ofMatrix4x4.h"
+	"ofRectangle.h"
+	"ofTypes.h"
+	"ofBaseTypes.h"
+	"ofGLRenderer.h"
+	"of3dPrimitives.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\3d\of3dprimitives.h
+	"ofVboMesh.h"
+	"ofRectangle.h"
+	"ofNode.h"
+	"ofTexture.h"
+	<map>
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\gl\ofmaterial.h
+	"ofColor.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\gl\ofshader.h
+	"ofConstants.h"
+	"ofBaseTypes.h"
+	"ofTexture.h"
+	"ofMatrix4x4.h"
+	"Poco/RegularExpression.h"
+	<map>
+	"ofAppBaseWindow.h"
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\regularexpression.h
+	"Poco/Foundation.h"
+	<vector>
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\app\ofappbasewindow.h
+	"ofPoint.h"
+	"ofTypes.h"
+	<X11/Xlib.h>
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\gl\ofglprogrammablerenderer.h
+	"ofBaseTypes.h"
+	"ofPolyline.h"
+	"ofMatrix4x4.h"
+	"ofShader.h"
+	"ofGraphics.h"
+	"ofMatrixStack.h"
+	<stack>
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\graphics\ofcairorenderer.h
+	"cairo-features.h"
+	"cairo-pdf.h"
+	"cairo-svg.h"
+	"cairo.h"
+	<deque>
+	<stack>
+	"ofMatrix4x4.h"
+	"ofBaseTypes.h"
+	"ofPath.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\cairo\include\cairo\cairo-features.h
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\cairo\include\cairo\cairo-pdf.h
+	"cairo.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\cairo\include\cairo\cairo.h
+	"cairo-version.h"
+	"cairo-features.h"
+	"cairo-deprecated.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\cairo\include\cairo\cairo-version.h
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\cairo\include\cairo\cairo-deprecated.h
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\cairo\include\cairo\cairo-svg.h
+	"cairo.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\graphics\ofpath.h
+	"ofConstants.h"
+	"ofPoint.h"
+	"ofColor.h"
+	"ofPolyline.h"
+	"ofBaseTypes.h"
+	"ofVboMesh.h"
+	"ofTessellator.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\graphics\oftessellator.h
+	"ofConstants.h"
+	"ofMesh.h"
+	"ofTypes.h"
+	"ofPolyline.h"
+	"tesselator.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\graphics\ofimage.h
+	"ofFileUtils.h"
+	"ofTexture.h"
+	"ofPixels.h"
+	"ofBaseTypes.h"
+	"ofConstants.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\graphics\ofrenderercollection.h
+	"ofBaseTypes.h"
+	"ofGLRenderer.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\graphics\oftruetypefont.h
+	<vector>
+	"ofPoint.h"
+	"ofRectangle.h"
+	"ofConstants.h"
+	"ofPath.h"
+	"ofTexture.h"
+	"ofMesh.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\app\ofbaseapp.h
+	"ofPoint.h"
+	"ofEvents.h"
+	"ofBaseTypes.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\app\ofapprunner.h
+	"ofConstants.h"
+	"ofPoint.h"
+	"ofRectangle.h"
+	"ofTypes.h"
+	<X11/Xlib.h>
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\sound\ofsoundstream.h
+	"ofConstants.h"
+	"ofBaseTypes.h"
+	"ofBaseApp.h"
+	"ofTypes.h"
+	"ofBaseSoundStream.h"
+	"ofRtAudioSoundStream.h"
+	"ofPASoundStream.h"
+	"ofxAndroidSoundStream.h"
+	"ofxiOSSoundStream.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\sound\ofbasesoundstream.h
+	"ofConstants.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\sound\ofrtaudiosoundstream.h
+	"ofConstants.h"
+	"ofBaseSoundStream.h"
+	"ofTypes.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\sound\ofsoundplayer.h
+	"ofConstants.h"
+	"ofTypes.h"
+	"ofBaseTypes.h"
+	"ofBaseSoundPlayer.h"
+	"ofQuicktimeSoundPlayer.h"
+	"ofFmodSoundPlayer.h"
+	"ofOpenALSoundPlayer.h"
+	"ofxiOSSoundPlayer.h"
+	"ofxAndroidSoundPlayer.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\sound\ofbasesoundplayer.h
+	"ofConstants.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\sound\offmodsoundplayer.h
+	"ofConstants.h"
+	"ofBaseSoundPlayer.h"
+	"fmod.h"
+	"fmod_errors.h"
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\fmodex\include\fmod.h
+	"fmod_codec.h"
+	"fmod_dsp.h"
+	"fmod_memoryinfo.h"
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\fmodex\include\fmod_codec.h
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\fmodex\include\fmod_dsp.h
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\fmodex\include\fmod_memoryinfo.h
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\fmodex\include\fmod_errors.h
+	"fmod.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\sound\ofopenalsoundplayer.h
+	"ofConstants.h"
+	"ofBaseSoundPlayer.h"
+	"ofEvents.h"
+	"ofThread.h"
+	<OpenAL/al.h>
+	<OpenAL/alc.h>
+	<AL/al.h>
+	<AL/alc.h>
+	"kiss_fft.h"
+	"kiss_fftr.h"
+	<sndfile.h>
+	<mpg123.h>
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\video\ofvideograbber.h
+	"ofConstants.h"
+	"ofTexture.h"
+	"ofBaseTypes.h"
+	"ofPixels.h"
+	"ofTypes.h"
+	"ofxiOSVideoGrabber.h"
+	"ofQuickTimeGrabber.h"
+	"ofQTKitGrabber.h"
+	"ofDirectShowGrabber.h"
+	"ofGstVideoGrabber.h"
+	"ofxAndroidVideoGrabber.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\video\ofquicktimegrabber.h
+	"ofConstants.h"
+	"ofQtUtils.h"
+	"ofTexture.h"
+	"ofBaseTypes.h"
+	"ofPixels.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\video\ofqtutils.h
+	"ofConstants.h"
+	<QuickTime/QuickTime.h>
+	<CoreServices/CoreServices.h>
+	<ApplicationServices/ApplicationServices.h>
+	<QTML.h>
+	<FixMath.h>
+	<QuickTimeComponents.h>
+	<TextUtils.h>
+	<MediaHandlers.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\qtml.h
+	<MacTypes.h>
+	<MacMemory.h>
+	<MacWindows.h>
+	<OSUtils.h>
+	<Files.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\mactypes.h
+	<ConditionalMacros.h>
+
+1499420523 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\conditionalmacros.h
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\macmemory.h
+	<MacTypes.h>
+	<MixedMode.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\mixedmode.h
+	<MacTypes.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\macwindows.h
+	<MacTypes.h>
+	<Aliases.h>
+	<AppleEvents.h>
+	<Collections.h>
+	<Drag.h>
+	<Events.h>
+	<Menus.h>
+	<MixedMode.h>
+	<QDOffscreen.h>
+	<Quickdraw.h>
+	<TextCommon.h>
+	<Icons.h>
+	<MacErrors.h>
+
+1499420523 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\aliases.h
+	<MacTypes.h>
+	<AppleTalk.h>
+	<Files.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\appletalk.h
+	<MacTypes.h>
+	<OSUtils.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\osutils.h
+	<MacTypes.h>
+	<MixedMode.h>
+	<MacMemory.h>
+	<Patches.h>
+	<DateTimeUtils.h>
+	<Endian.h>
+
+1499420523 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\patches.h
+	<MacTypes.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\datetimeutils.h
+	<ConditionalMacros.h>
+	<MacTypes.h>
+
+1499420523 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\endian.h
+	<ConditionalMacros.h>
+	<MacTypes.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\files.h
+	<MacTypes.h>
+	<MixedMode.h>
+	<OSUtils.h>
+	<TextCommon.h>
+	<UTCUtils.h>
+	<Finder.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\textcommon.h
+	<MacTypes.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\utcutils.h
+	<MacTypes.h>
+	<MacErrors.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\macerrors.h
+	<ConditionalMacros.h>
+
+1499420523 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\finder.h
+	<MacTypes.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\appleevents.h
+	<MacTypes.h>
+	<MixedMode.h>
+	<Notification.h>
+	<Events.h>
+	<AEDataModel.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\notification.h
+	<MacTypes.h>
+	<OSUtils.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\events.h
+	<OSUtils.h>
+	<Quickdraw.h>
+	<MacTypes.h>
+	<Endian.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\quickdraw.h
+	<Components.h>
+	<MacTypes.h>
+	<MixedMode.h>
+	<QuickdrawText.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\components.h
+	<MacErrors.h>
+	<MacTypes.h>
+	<MixedMode.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\quickdrawtext.h
+	<MacTypes.h>
+	<MixedMode.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\aedatamodel.h
+	<MacTypes.h>
+	<MixedMode.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\collections.h
+	<MacTypes.h>
+	<MixedMode.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\drag.h
+	<MacTypes.h>
+	<Events.h>
+	<Files.h>
+	<AppleEvents.h>
+	<Quickdraw.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\menus.h
+	<MacTypes.h>
+	<Events.h>
+	<Quickdraw.h>
+	<Fonts.h>
+	<TextCommon.h>
+	<Processes.h>
+	<AppleEvents.h>
+	<Collections.h>
+	<MacErrors.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\fonts.h
+	<MacTypes.h>
+	<Files.h>
+	<Quickdraw.h>
+	<TextCommon.h>
+	<MacErrors.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\processes.h
+	<MacTypes.h>
+	<Events.h>
+	<Files.h>
+
+1499420523 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\qdoffscreen.h
+	<MacErrors.h>
+	<Quickdraw.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\icons.h
+	<MacTypes.h>
+	<Quickdraw.h>
+	<Files.h>
+	<CodeFragments.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\codefragments.h
+	<MacTypes.h>
+	<Files.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\fixmath.h
+	<MacTypes.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\quicktimecomponents.h
+	<MacTypes.h>
+	<MixedMode.h>
+	<Components.h>
+	<ImageCompression.h>
+	<Movies.h>
+	<Quickdraw.h>
+	<Video.h>
+	<Sound.h>
+	<QuickTimeMusic.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\imagecompression.h
+	<MacTypes.h>
+	<Quickdraw.h>
+	<QDOffscreen.h>
+	<Components.h>
+	<StandardFile.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\standardfile.h
+	<MacTypes.h>
+	<Dialogs.h>
+	<Files.h>
+
+1499420523 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\dialogs.h
+	<MacTypes.h>
+	<MixedMode.h>
+	<Events.h>
+	<MacWindows.h>
+	<TextEdit.h>
+	<Controls.h>
+	<MacErrors.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\textedit.h
+	<MacTypes.h>
+	<Quickdraw.h>
+	<MixedMode.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\controls.h
+	<MacTypes.h>
+	<Quickdraw.h>
+	<Menus.h>
+	<TextEdit.h>
+	<Drag.h>
+	<Icons.h>
+	<Collections.h>
+	<MacErrors.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\movies.h
+	<Quickdraw.h>
+	<Aliases.h>
+	<Events.h>
+	<Menus.h>
+	<Components.h>
+	<ImageCompression.h>
+
+1499420523 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\video.h
+	<Quickdraw.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\sound.h
+	<MacTypes.h>
+	<Dialogs.h>
+	<Components.h>
+	<MixedMode.h>
+	<Movies.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\quicktimemusic.h
+	<Components.h>
+	<ImageCompression.h>
+	<Movies.h>
+	<Quickdraw.h>
+	<Video.h>
+	<MacMemory.h>
+	<Sound.h>
+	<Endian.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\textutils.h
+	<MacTypes.h>
+	<NumberFormatting.h>
+	<StringCompare.h>
+	<DateTimeUtils.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\numberformatting.h
+	<ConditionalMacros.h>
+	<MacTypes.h>
+	<IntlResources.h>
+
+1499420522 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\intlresources.h
+	<MacTypes.h>
+
+1499420523 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\stringcompare.h
+	<MacTypes.h>
+	<TextCommon.h>
+	<Script.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\script.h
+	<MacTypes.h>
+	<Quickdraw.h>
+	<IntlResources.h>
+	<Events.h>
+
+1499420521 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\quicktime\include\mediahandlers.h
+	<ConditionalMacros.h>
+	<MacTypes.h>
+	<Components.h>
+	<Movies.h>
+	<Sound.h>
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\video\ofqtkitgrabber.h
+	"ofMain.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\video\ofdirectshowgrabber.h
+	"ofConstants.h"
+	"ofTexture.h"
+	"ofBaseTypes.h"
+	"ofPixels.h"
+	"videoInput.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\videoinput\include\videoinput.h
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<wchar.h>
+	<string>
+	<vector>
+	<windows.h>
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\video\ofgstvideograbber.h
+	"ofGstUtils.h"
+	"ofTypes.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\video\ofgstutils.h
+	"ofConstants.h"
+	"ofConstants.h"
+	"ofBaseTypes.h"
+	"ofPixels.h"
+	"ofTypes.h"
+	"ofEvents.h"
+	"ofThread.h"
+	<gst/gst.h>
+	<gst/gstpad.h>
+	"Poco/Condition.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\video\ofvideoplayer.h
+	"ofConstants.h"
+	"ofTexture.h"
+	"ofBaseTypes.h"
+	"ofTypes.h"
+	"ofGstVideoPlayer.h"
+	"ofQuickTimePlayer.h"
+	"ofQTKitPlayer.h"
+	"ofxiOSVideoPlayer.h"
+	"ofxAndroidVideoPlayer.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\video\ofgstvideoplayer.h
+	"ofGstUtils.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\video\ofquicktimeplayer.h
+	"ofConstants.h"
+	"ofBaseTypes.h"
+	"ofPixels.h"
+	"ofQtUtils.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\video\ofqtkitplayer.h
+	"ofMain.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\3d\ofcamera.h
+	"ofRectangle.h"
+	"ofAppRunner.h"
+	"ofNode.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\3d\ofeasycam.h
+	"ofCamera.h"
+	"ofEvents.h"
+
+1499420531 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\src\ofxoscmessage.cpp
+	"ofxOscMessage.h"
+	"ofLog.h"
+	<iostream>
+	<assert.h>
+
+1499420531 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\src\ofxoscparametersync.cpp
+	"ofxOscParameterSync.h"
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\src\ofxoscparametersync.h
+	"ofxOscSender.h"
+	"ofxOscReceiver.h"
+	"ofParameter.h"
+	"ofParameterGroup.h"
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\src\ofxoscsender.h
+	<string>
+	"OscTypes.h"
+	"OscOutboundPacketStream.h"
+	"ofxOscBundle.h"
+	"ofxOscMessage.h"
+	"ofParameter.h"
+	"ofParameterGroup.h"
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\src\ofxoscreceiver.h
+	<deque>
+	"ofMain.h"
+	<windows.h>
+	<pthread.h>
+	"OscTypes.h"
+	"OscPacketListener.h"
+	"UdpSocket.h"
+	"ofxOscMessage.h"
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\libs\oscpack\src\osc\oscpacketlistener.h
+	"OscReceivedElements.h"
+	"../ip/PacketListener.h"
+
+1499420531 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\src\ofxoscreceiver.cpp
+	"ofxOscReceiver.h"
+	<pthread.h>
+	<iostream>
+	<assert.h>
+
+1499420531 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\src\ofxoscsender.cpp
+	"ofxOscSender.h"
+	"ofUtils.h"
+	"ofParameterGroup.h"
+	"UdpSocket.h"
+	<assert.h>
+
+1499423508 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxhttputils\src\ofxhttputils.cpp
+	"Poco/Net/SSLManager.h"
+	"Poco/Net/HTTPSClientSession.h"
+	"Poco/Net/ConsoleCertificateHandler.h"
+	"Poco/Net/FilePartSource.h"
+	"Poco/Net/StringPartSource.h"
+	"Poco/Net/KeyConsoleHandler.h"
+	"Poco/Net/HTTPSession.h"
+	"Poco/Net/HTTPClientSession.h"
+	"Poco/Net/HTTPRequest.h"
+	"Poco/Net/HTMLForm.h"
+	"Poco/StreamCopier.h"
+	"Poco/Path.h"
+	"Poco/URI.h"
+	"Poco/Exception.h"
+	"ofxHttpUtils.h"
+	"ofEvents.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\sslmanager.h
+	"Poco/Net/NetSSL.h"
+	"Poco/Net/VerificationErrorArgs.h"
+	"Poco/Net/Context.h"
+	"Poco/Net/PrivateKeyFactoryMgr.h"
+	"Poco/Net/CertificateHandlerFactoryMgr.h"
+	"Poco/Net/InvalidCertificateHandler.h"
+	"Poco/Util/AbstractConfiguration.h"
+	"Poco/BasicEvent.h"
+	"Poco/SharedPtr.h"
+	"Poco/Mutex.h"
+	<openssl/ssl.h>
+	<openssl/fips.h>
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\netssl.h
+	"Poco/Net/Net.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\net.h
+	"Poco/Foundation.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\verificationerrorargs.h
+	"Poco/Net/NetSSL.h"
+	"Poco/Net/X509Certificate.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\x509certificate.h
+	"Poco/Net/NetSSL.h"
+	"Poco/Net/SocketDefs.h"
+	"Poco/Crypto/X509Certificate.h"
+	"Poco/DateTime.h"
+	"Poco/SharedPtr.h"
+	<set>
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\socketdefs.h
+	"Poco/UnWindows.h"
+	<winsock2.h>
+	<ws2tcpip.h>
+	<hostLib.h>
+	<ifLib.h>
+	<inetLib.h>
+	<ioLib.h>
+	<resolvLib.h>
+	<types.h>
+	<socket.h>
+	<netinet/tcp.h>
+	<unistd.h>
+	<errno.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/select.h>
+	<sys/ioctl.h>
+	<inet.h>
+	<arpa/inet.h>
+	<netinet/in.h>
+	<netinet/tcp.h>
+	<netdb.h>
+	<net/if.h>
+	<sys/sockio.h>
+	<sys/filio.h>
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\crypto\x509certificate.h
+	"Poco/Crypto/Crypto.h"
+	"Poco/Crypto/OpenSSLInitializer.h"
+	"Poco/DateTime.h"
+	"Poco/SharedPtr.h"
+	<set>
+	<istream>
+	<openssl/ssl.h>
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\crypto\crypto.h
+	"Poco/Foundation.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\crypto\opensslinitializer.h
+	"Poco/Crypto/Crypto.h"
+	"Poco/Mutex.h"
+	<openssl/opensslconf.h>
+	<openssl/fips.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\opensslconf.h
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\datetime.h
+	"Poco/Foundation.h"
+	"Poco/Timestamp.h"
+	"Poco/Timespan.h"
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\timespan.h
+	"Poco/Foundation.h"
+	"Poco/Timestamp.h"
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\ssl.h
+	<openssl/e_os2.h>
+	<openssl/comp.h>
+	<openssl/bio.h>
+	<openssl/x509.h>
+	<openssl/crypto.h>
+	<openssl/lhash.h>
+	<openssl/buffer.h>
+	<openssl/pem.h>
+	<openssl/hmac.h>
+	<openssl/kssl.h>
+	<openssl/safestack.h>
+	<openssl/symhacks.h>
+	<openssl/ssl2.h>
+	<openssl/ssl3.h>
+	<openssl/tls1.h>
+	<openssl/dtls1.h>
+	<openssl/ssl23.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\e_os2.h
+	<openssl/opensslconf.h>
+	<sys/socket.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\comp.h
+	<openssl/crypto.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\crypto.h
+	<stdlib.h>
+	<openssl/e_os2.h>
+	<stdio.h>
+	<openssl/stack.h>
+	<openssl/safestack.h>
+	<openssl/opensslv.h>
+	<openssl/ossl_typ.h>
+	<openssl/ebcdic.h>
+	<openssl/symhacks.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\stack.h
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\safestack.h
+	<openssl/stack.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\opensslv.h
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\ossl_typ.h
+	<openssl/e_os2.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\ebcdic.h
+	<sys/types.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\symhacks.h
+	<openssl/e_os2.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\bio.h
+	<openssl/e_os2.h>
+	<stdio.h>
+	<stdarg.h>
+	<openssl/crypto.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\x509.h
+	<openssl/e_os2.h>
+	<openssl/symhacks.h>
+	<openssl/buffer.h>
+	<openssl/evp.h>
+	<openssl/bio.h>
+	<openssl/stack.h>
+	<openssl/asn1.h>
+	<openssl/safestack.h>
+	<openssl/ec.h>
+	<openssl/ecdsa.h>
+	<openssl/ecdh.h>
+	<openssl/rsa.h>
+	<openssl/dsa.h>
+	<openssl/dh.h>
+	<openssl/sha.h>
+	<openssl/ossl_typ.h>
+	<openssl/x509_vfy.h>
+	<openssl/pkcs7.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\buffer.h
+	<openssl/ossl_typ.h>
+	<stddef.h>
+	<sys/types.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\evp.h
+	<openssl/opensslconf.h>
+	<openssl/opensslconf.h>
+	<openssl/ossl_typ.h>
+	<openssl/symhacks.h>
+	<openssl/bio.h>
+	<openssl/objects.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\objects.h
+	<openssl/obj_mac.h>
+	<openssl/bio.h>
+	<openssl/asn1.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\obj_mac.h
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\asn1.h
+	<time.h>
+	<openssl/e_os2.h>
+	<openssl/bio.h>
+	<openssl/stack.h>
+	<openssl/safestack.h>
+	<openssl/symhacks.h>
+	<openssl/ossl_typ.h>
+	<openssl/bn.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\bn.h
+	<openssl/e_os2.h>
+	<stdio.h>
+	<openssl/ossl_typ.h>
+	<openssl/crypto.h>
+	<assert.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\ec.h
+	<openssl/opensslconf.h>
+	<openssl/asn1.h>
+	<openssl/symhacks.h>
+	<openssl/bn.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\ecdsa.h
+	<openssl/opensslconf.h>
+	<openssl/ec.h>
+	<openssl/ossl_typ.h>
+	<openssl/bn.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\ecdh.h
+	<openssl/opensslconf.h>
+	<openssl/ec.h>
+	<openssl/ossl_typ.h>
+	<openssl/bn.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\rsa.h
+	<openssl/asn1.h>
+	<openssl/bio.h>
+	<openssl/crypto.h>
+	<openssl/ossl_typ.h>
+	<openssl/bn.h>
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\dsa.h
+	<openssl/e_os2.h>
+	<openssl/bio.h>
+	<openssl/crypto.h>
+	<openssl/ossl_typ.h>
+	<openssl/bn.h>
+	<openssl/dh.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\dh.h
+	<openssl/e_os2.h>
+	<openssl/bio.h>
+	<openssl/ossl_typ.h>
+	<openssl/bn.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\sha.h
+	<openssl/e_os2.h>
+	<stddef.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\x509_vfy.h
+	<openssl/x509.h>
+	<openssl/opensslconf.h>
+	<openssl/lhash.h>
+	<openssl/bio.h>
+	<openssl/crypto.h>
+	<openssl/symhacks.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\lhash.h
+	<openssl/e_os2.h>
+	<stdio.h>
+	<openssl/bio.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\pkcs7.h
+	<openssl/asn1.h>
+	<openssl/bio.h>
+	<openssl/e_os2.h>
+	<openssl/symhacks.h>
+	<openssl/ossl_typ.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\pem.h
+	<openssl/e_os2.h>
+	<openssl/bio.h>
+	<openssl/stack.h>
+	<openssl/evp.h>
+	<openssl/x509.h>
+	<openssl/pem2.h>
+	<openssl/symhacks.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\pem2.h
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\hmac.h
+	<openssl/opensslconf.h>
+	<openssl/evp.h>
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\kssl.h
+	<openssl/opensslconf.h>
+	<stdio.h>
+	<ctype.h>
+	<krb5.h>
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\ssl2.h
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\ssl3.h
+	<openssl/comp.h>
+	<openssl/buffer.h>
+	<openssl/evp.h>
+	<openssl/ssl.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\tls1.h
+	<openssl/buffer.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\dtls1.h
+	<openssl/buffer.h>
+	<openssl/pqueue.h>
+	<resource.h>
+	<sys/timeb.h>
+	<winsock.h>
+	<sys/timeval.h>
+	<sys/time.h>
+
+1499420520 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\pqueue.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1499420519 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openssl\include\openssl\ssl23.h
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\context.h
+	"Poco/Net/NetSSL.h"
+	"Poco/Net/SocketDefs.h"
+	"Poco/Crypto/X509Certificate.h"
+	"Poco/Crypto/RSAKey.h"
+	"Poco/RefCountedObject.h"
+	"Poco/AutoPtr.h"
+	<openssl/ssl.h>
+	<cstdlib>
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\crypto\rsakey.h
+	"Poco/Crypto/Crypto.h"
+	"Poco/Crypto/RSAKeyImpl.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\crypto\rsakeyimpl.h
+	"Poco/Crypto/Crypto.h"
+	"Poco/Crypto/OpenSSLInitializer.h"
+	"Poco/RefCountedObject.h"
+	"Poco/AutoPtr.h"
+	<istream>
+	<ostream>
+	<vector>
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\privatekeyfactorymgr.h
+	"Poco/Net/NetSSL.h"
+	"Poco/Net/PrivateKeyFactory.h"
+	"Poco/SharedPtr.h"
+	<map>
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\privatekeyfactory.h
+	"Poco/Net/NetSSL.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\certificatehandlerfactorymgr.h
+	"Poco/Net/NetSSL.h"
+	"Poco/Net/CertificateHandlerFactory.h"
+	"Poco/SharedPtr.h"
+	<map>
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\certificatehandlerfactory.h
+	"Poco/Net/NetSSL.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\invalidcertificatehandler.h
+	"Poco/Net/NetSSL.h"
+	"Poco/Net/VerificationErrorArgs.h"
+
+1499420529 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\util\abstractconfiguration.h
+	"Poco/Util/Util.h"
+	"Poco/Mutex.h"
+	"Poco/RefCountedObject.h"
+	"Poco/BasicEvent.h"
+	<vector>
+	<utility>
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\util\util.h
+	"Poco/Foundation.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\basicevent.h
+	"Poco/AbstractEvent.h"
+	"Poco/DefaultStrategy.h"
+	"Poco/AbstractDelegate.h"
+	"Poco/Mutex.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\defaultstrategy.h
+	"Poco/NotificationStrategy.h"
+	"Poco/SharedPtr.h"
+	<vector>
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\httpsclientsession.h
+	"Poco/Net/NetSSL.h"
+	"Poco/Net/Utility.h"
+	"Poco/Net/HTTPClientSession.h"
+	"Poco/Net/Context.h"
+	"Poco/Net/Session.h"
+	"Poco/Net/X509Certificate.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\utility.h
+	"Poco/Net/NetSSL.h"
+	"Poco/Net/Context.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\httpclientsession.h
+	"Poco/Net/Net.h"
+	"Poco/Net/HTTPSession.h"
+	"Poco/Net/SocketAddress.h"
+	<istream>
+	<ostream>
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\httpsession.h
+	"Poco/Net/Net.h"
+	"Poco/Net/StreamSocket.h"
+	"Poco/Timespan.h"
+	"Poco/Exception.h"
+	"Poco/Any.h"
+	<ios>
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\streamsocket.h
+	"Poco/Net/Net.h"
+	"Poco/Net/Socket.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\socket.h
+	"Poco/Net/Net.h"
+	"Poco/Net/SocketImpl.h"
+	<vector>
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\socketimpl.h
+	"Poco/Net/Net.h"
+	"Poco/Net/SocketDefs.h"
+	"Poco/Net/SocketAddress.h"
+	"Poco/RefCountedObject.h"
+	"Poco/Timespan.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\socketaddress.h
+	"Poco/Net/Net.h"
+	"Poco/Net/SocketDefs.h"
+	"Poco/Net/IPAddress.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\ipaddress.h
+	"Poco/Net/Net.h"
+	"Poco/Net/SocketDefs.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\session.h
+	"Poco/Net/NetSSL.h"
+	"Poco/RefCountedObject.h"
+	"Poco/AutoPtr.h"
+	<openssl/ssl.h>
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\consolecertificatehandler.h
+	"Poco/Net/NetSSL.h"
+	"Poco/Net/InvalidCertificateHandler.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\filepartsource.h
+	"Poco/Net/Net.h"
+	"Poco/Net/PartSource.h"
+	"Poco/FileStream.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\partsource.h
+	"Poco/Net/Net.h"
+	"Poco/Net/MessageHeader.h"
+	<istream>
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\messageheader.h
+	"Poco/Net/Net.h"
+	"Poco/Net/NameValueCollection.h"
+	<ostream>
+	<istream>
+	<vector>
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\namevaluecollection.h
+	"Poco/Net/Net.h"
+	"Poco/String.h"
+	<map>
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\string.h
+	"Poco/Foundation.h"
+	"Poco/Ascii.h"
+	<cstring>
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\ascii.h
+	"Poco/Foundation.h"
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\filestream.h
+	"Poco/Foundation.h"
+	"FileStream_WIN32.h"
+	"FileStream_POSIX.h"
+	<istream>
+	<ostream>
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\filestream_win32.h
+	"Poco/Foundation.h"
+	"Poco/BufferedBidirectionalStreamBuf.h"
+	"Poco/UnWindows.h"
+
+1499420526 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\bufferedbidirectionalstreambuf.h
+	"Poco/Foundation.h"
+	"Poco/BufferAllocator.h"
+	"Poco/StreamUtil.h"
+	<streambuf>
+	<iosfwd>
+	<ios>
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\bufferallocator.h
+	"Poco/Foundation.h"
+	<ios>
+	<cstddef>
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\filestream_posix.h
+	"Poco/Foundation.h"
+	"Poco/BufferedBidirectionalStreamBuf.h"
+	<istream>
+	<ostream>
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\stringpartsource.h
+	"Poco/Net/Net.h"
+	"Poco/Net/PartSource.h"
+	<sstream>
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\keyconsolehandler.h
+	"Poco/Net/NetSSL.h"
+	"Poco/Net/PrivateKeyPassphraseHandler.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\privatekeypassphrasehandler.h
+	"Poco/Net/NetSSL.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\httprequest.h
+	"Poco/Net/Net.h"
+	"Poco/Net/HTTPMessage.h"
+
+1499420527 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\httpmessage.h
+	"Poco/Net/Net.h"
+	"Poco/Net/MessageHeader.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\htmlform.h
+	"Poco/Net/Net.h"
+	"Poco/Net/NameValueCollection.h"
+	<ostream>
+	<istream>
+	<vector>
+
+1499420525 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\streamcopier.h
+	"Poco/Foundation.h"
+	<istream>
+	<ostream>
+	<cstddef>
+
+1499420524 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\uri.h
+	"Poco/Foundation.h"
+	<vector>
+
+1499423508 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxhttputils\src\ofxhttputils.h
+	<iostream>
+	<queue>
+	<istream>
+	"Poco/Mutex.h"
+	"Poco/Net/HTTPResponse.h"
+	"Poco/Condition.h"
+	"Poco/Net/HTTPBasicCredentials.h"
+	"ofThread.h"
+	"ofConstants.h"
+	"ofxHttpTypes.h"
+	"ofEvents.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\httpresponse.h
+	"Poco/Net/Net.h"
+	"Poco/Net/HTTPMessage.h"
+	"Poco/Net/HTTPCookie.h"
+	"Poco/Timestamp.h"
+	<vector>
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\httpcookie.h
+	"Poco/Net/Net.h"
+
+1499420528 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\poco\include\poco\net\httpbasiccredentials.h
+	"Poco/Net/Net.h"
+
+1499423508 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxhttputils\src\ofxhttptypes.h
+	"ofUtils.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\app.cpp
+	"app.h"
+	"http.h"
+	"session.h"
+	"heatmap.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\app.h
+	"baseApp.h"
+	"metadata.hpp"
+	"rotation.hpp"
+	"heatmap.hpp"
+	"path.hpp"
+	"joystick_movs.hpp"
+	"reactions.hpp"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\baseapp.h
+	"ofMain.h"
+	"BaseState.h"
+	"assets.h"
+	"ofxOsc.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\basestate.h
+	"ofMain.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\assets.h
+	"baseAssets.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\baseassets.h
+	"ofMain.h"
+	"ofxJSON.h"
+
+1499423405 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxjson\src\ofxjson.h
+	"json/json.h"
+	"ofxJSONElement.h"
+
+1499420531 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxosc\src\ofxosc.h
+	"ofxOscArg.h"
+	"ofxOscMessage.h"
+	"ofxOscSender.h"
+	"ofxOscReceiver.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\metadata.hpp
+	"ofxJSON.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\rotation.hpp
+	"ofMain.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\heatmap.hpp
+	"ofMain.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\path.hpp
+	"ofMain.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\joystick_movs.hpp
+	"ofMain.h"
+	"assets.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\reactions.hpp
+	"ofMain.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\http.h
+	"ofMain.h"
+	"ofxHttpUtils.h"
+	"app.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\session.h
+	"app.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\heatmap.h
+	<stddef.h>
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\arduino.cpp
+	"arduino.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\arduino.h
+	"ofMain.h"
+	"app.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\assets.cpp
+	"assets.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\baseapp.cpp
+	"baseApp.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\baseassets.cpp
+	"baseAssets.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\basestate.cpp
+	"baseState.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\heatmap.c
+	"heatmap.h"
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<assert.h>
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\http.cpp
+	"http.h"
+	"session.h"
+
+1499420532 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxbasegui.cpp
+	"ofxBaseGui.h"
+	"ofXml.h"
+	"ofImage.h"
+	"ofBitmapFont.h"
+
+1499420532 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxbasegui.h
+	"ofConstants.h"
+	"ofBaseTypes.h"
+	"ofParameter.h"
+	"ofTrueTypeFont.h"
+
+1499420530 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\libs\openframeworks\graphics\ofbitmapfont.h
+	"ofConstants.h"
+	"ofRectangle.h"
+
+1499420532 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxbutton.cpp
+	"ofxButton.h"
+
+1499420532 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxbutton.h
+	"ofxToggle.h"
+	"ofParameter.h"
+
+1499420532 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxtoggle.h
+	"ofParameter.h"
+	"ofxBaseGui.h"
+
+1499420532 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxguigroup.cpp
+	"ofxGuiGroup.h"
+	"ofxPanel.h"
+	"ofxSliderGroup.h"
+	"ofGraphics.h"
+	"ofxLabel.h"
+
+1499420532 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxguigroup.h
+	"ofxBaseGui.h"
+	"ofxSlider.h"
+	"ofxButton.h"
+	"ofParameterGroup.h"
+
+1499420532 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxslider.h
+	"ofxBaseGui.h"
+	"ofParameter.h"
+
+1499420532 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxpanel.h
+	"ofxGuiGroup.h"
+
+1499420532 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxslidergroup.h
+	"ofxGuiGroup.h"
+	"ofxSlider.h"
+
+1499420532 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxlabel.h
+	"ofxBaseGui.h"
+	"ofParameter.h"
+
+1499420533 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxlabel.cpp
+	"ofxLabel.h"
+	"ofGraphics.h"
+
+1499420532 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxpanel.cpp
+	"ofxPanel.h"
+	"ofGraphics.h"
+	"ofImage.h"
+
+1499420532 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxslider.cpp
+	"ofxSlider.h"
+	"ofGraphics.h"
+
+1499420532 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxslidergroup.cpp
+	"ofxSliderGroup.h"
+
+1499420532 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxtoggle.cpp
+	"ofxToggle.h"
+	"ofGraphics.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\main.cpp
+	"ofMain.h"
+	"ofApp.h"
+	"assets.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\ofapp.h
+	"ofMain.h"
+	"app.h"
+	"OscAdapter.h"
+	"gui.hpp"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\oscadapter.h
+	"ofMain.h"
+	"ofxOsc.h"
+	"app.h"
+
+1499424348 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\gui.hpp
+	"ofxGui.h"
+	"app.h"
+	"session.h"
+	"assets.h"
+	"recordingState.h"
+
+1499420532 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\addons\ofxgui\src\ofxgui.h
+	"ofxToggle.h"
+	"ofxSlider.h"
+	"ofxSliderGroup.h"
+	"ofxPanel.h"
+	"ofxButton.h"
+	"ofxLabel.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\recordingstate.h
+	"baseState.h"
+	"app.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\ofapp.cpp
+	"ofApp.h"
+	"standbyState.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\standbystate.h
+	"baseState.h"
+	"app.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\oscadapter.cpp
+	"OscAdapter.h"
+	"http.h"
+	"session.h"
+	"recordingState.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\oscsender.cpp
+	"OscSender.h"
+	"assets.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\oscsender.h
+	"ofMain.h"
+	"ofxOsc.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\pauseplaybackstate.cpp
+	"playbackState.h"
+	"recordingState.h"
+	"pausePlaybackState.h"
+	"playbackState.h"
+	"pauseRecordingState.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\playbackstate.h
+	"baseState.h"
+	"app.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\pauseplaybackstate.h
+	"baseState.h"
+	"app.h"
+
+1499422788 c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\pauserecordingstate.h
+	"baseState.h"
+	"app.h"
+	"OscSender.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\pauserecordingstate.cpp
+	"pauseRecordingState.h"
+	"recordingState.h"
+	"pausePlaybackState.h"
+	"session.h"
+	"http.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\playbackstate.cpp
+	"playbackState.h"
+	"pauseRecordingState.h"
+	"pausePlaybackState.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\recordingstate.cpp
+	"recordingState.h"
+	"pauseRecordingState.h"
+	"pausePlaybackState.h"
+	"session.h"
+	"OscSender.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\session.cpp
+	"session.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\singletonassets.cpp
+	"assets.h"
+
+1499422788 source:c:\users\oculus\desktop\of_v0.8.4_win_cb_release\apps\myapps\lescer_viewer\src\standbystate.cpp
+	"standbyState.h"
+	"pauseRecordingState.h"
+	"pausePlaybackState.h"
+	"assets.h"
+
